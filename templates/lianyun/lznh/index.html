@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>龙之怒吼官网</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/resetCss.css">
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/swiper.min.css">
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/common.css">
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/index.css">
+</head>
+<body>
+  <div class="container">
+    {{include file="lznh/common/header.html"}}
+    <div class="content">
+      <div class="page page1" id="page1">
+        <div class="num"></div>
+        <div class="slice_wrap">
+          <div class="tab_wrap">
+            <ul class="tab clearfix">
+            </ul>
+            <div class="tab_list">
+             
+            </div>
+            <div class="code">
+              {{data name="专题官网底部二维码显示"}}
+              <img src="{{$DATA['专题官网底部二维码显示']['list'][0]['thumb']}}">
+              <p>扫码立即关注</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="page page2" id="page2">
+        <div class="num"></div>
+        <div class="title"></div>
+        <div class="tab_wrap">
+          <ul class="tab_title">
+            <li onmouseenter="slice(this)" class="job1"></li>
+            <li onmouseenter="slice(this)" class="job2"></li>
+          </ul>
+          <div class="tab_list">
+            <div class="main selected">
+              <div class="swiper-father">
+                <div class="swiper-container person">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/2018/lianyun/lznh/index/person1.png" width="100%"></div>
+                    <div class="swiper-slide"><img src="/images/2018/lianyun/lznh/index/person2.png" width="100%"></div>
+                    <div class="swiper-slide"><img src="/images/2018/lianyun/lznh/index/person3.png" width="100%"></div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev aa"></div>
+                <div class="swiper-button-next bb"></div>
+              </div>
+            </div>
+            <div class="main">
+              <div class="swiper-father">
+                <div class="swiper-container longSheng">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/2018/lianyun/lznh/index/longSheng1.png" width="100%">
+                    </div>
+                    <div class="swiper-slide"><img src="/images/2018/lianyun/lznh/index/longSheng2.png" width="100%">
+                    </div>
+                    <div class="swiper-slide"><img src="/images/2018/lianyun/lznh/index/longSheng3.png" width="100%">
+                    </div>
+                    <div class="swiper-slide"><img src="/images/2018/lianyun/lznh/index/longSheng4.png" width="100%">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev cc"></div>
+                <div class="swiper-button-next dd"></div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="page page3" id="page3">
+        <div class="num"></div>
+        <div class="title"></div>
+        <div class="slice_wrap">
+          <ul>
+            {{data name="lz天使盟约专题轮播"}}
+            {{foreach from=$DATA['lz天使盟约专题轮播'].list key=k item=item}}
+            <li class="new_{{$k+1}} wrap {{if $k== 0}}active{{/if}}">
+              <div class="list {{if $k!= 0}}active{{/if}}" {{if $k == 0}}style="display: none" {{/if}}>
+                <p>{{$item.title}}</p>
+              </div>
+              <div class="show">
+                <div class="sub">
+                  <p>{{$item.title}}</p>
+                </div>
+                <div class="img"><img src='{{$item.thumb}}' width="100%"></div>
+              </div>
+            </li>
+            {{/foreach}}
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+    {{include file="lznh/common/footer.html"}}
+  </div>
+  {{include file="lznh/common/video.html"}}
+  <!-- 遮罩 -->
+  <div class="login-layer"> </div>
+  <!-- 登录 -->
+  <div id="login" class="mod-login">
+    <ul class="login">
+      <li><a href="#" class="close"></a>绑定手机领取礼包</li>
+    </ul>
+    <div class="login-con">
+      <div class="login-account">
+        <form method="post" class="login-form" id="login_form">
+          <div class="item">
+            <input name="phoneNum" id="phoneNum" type="text" placeholder="请输入绑定的电话号码">
+            <label for="phoneNum" class="icon-phone"></label>
+          </div>
+          <div class="item">
+            <input name="code" id="code" type="text" placeholder="图形验证码">
+            <img onClick="this.src= '{{$CONFIG.app_url}}/csi/ImageVerify/getImageCode?'+Math.random();"
+              src="{{$CONFIG.app_url}}/csi/ImageVerify/getImageCode?{{$smarty.now}}" title="点击更换" id="php-code"
+              class="php-code" />
+          </div>
+          <div class="item">
+            <input name="captcha" id="captcha" type="text" placeholder="短信验证码">
+            <a class="icon-code" onClick="sendCaptcha()">获取验证码</a>
+          </div>
+          <p class="error_text" id='error_text'></p>
+          <p class="tip_text">该号码用于领取</p>
+
+          <a href="javascript:;" class="btn-tologin" onClick="submit()">立即绑定</a>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- 礼包弹框 -->
+  <div class="gift_dialog" id="gift">
+    <div class="gift">
+      <div class="title">
+        <h2></h2>
+      </div>
+      <p>礼包码：<span></span></p>
+    </div>
+    <div class="close"></div>
+  </div>
+</body>
+<script src="/js/jquery.js"></script>
+<script src="/js/2018/lianyun/lznh/swiper.min.js"></script>
+<script src="/js/2018/lianyun/lznh/common.js"></script>
+<script>
+  $(function () {
+    var mySwiper = new Swiper('.person', {
+      // 如果需要前进后退按钮
+      navigation: {
+        nextEl: '.bb',
+        prevEl: '.aa',
+      }
+    })
+  })
+
+
+
+</script>
+
+</html>

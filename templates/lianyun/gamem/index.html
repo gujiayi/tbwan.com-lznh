@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>单职业技术支持</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=0.43">
+
+<link rel="stylesheet" href="/style/2018/lianyun/gamem/layui.css" media="all">
+<script src="/js/gamem/layui.js" charset="utf-8"></script>
+<script type="text/javascript" src="{{$CONFIG.resource}}/js/ajax.js?{{$CONFIG.build}}"></script>
+<script type="text/javascript" src="{{$CONFIG.resource}}/js/back_cookie.js?{{$CONFIG.build}}"></script>
+<style type="text/css">
+body{
+padding:0px; 
+margin:0px;
+}
+
+.content{ margin:0px auto;	width:750px; height:auto;	}
+.scroll-img{ width: 100%; height: 300px;  align-items: center;}
+.scroll-img .s-center{width:550px;  height: 100%; display: inline-block;}
+.btn-box{width: 95px; height:100%;text-align: center; position: relative;}
+.img-box{padding:10px; height:100%; border: 2px solid #ac4c87; }
+.btn-box img{position:relative;top:47.8%;top:calc(50% - 20px);};
+
+.titleimg{margin:30px 0px;}
+.titleimg2{margin-top:80px; margin-bottom: 10px}
+
+.tel {font-size: 30px; color: #666666; text-align: center;}
+
+.bottom{padding:20px;box-sizing:border-box;background: url("/images/2018/gamem/bottomBg.jpg"); min-height: 100px; width:100%; margin-top: 46px; padding-top: 20px; padding-bottom: 20px; overflow: hidden;}
+.bottom p{font-size: 15px; color: #e6e6e6; text-align: center; padding:3px 0px;}
+</style>
+<link id="layuicss-layer" rel="stylesheet" href="/style/2018/lianyun/gamem/layer.css" media="all"></head>
+<body>
+  <div class="content">
+  {{data name="单职业移动端大图"}}
+<div>
+<img src="{{$DATA['单职业移动端大图']['list'][0]['thumb']}}">
+</div>
+<div class="titleimg">
+<img src="{{$DATA['单职业移动端大图']['list'][1]['thumb']}}">
+</div>
+
+      <div class="scroll-img" style="height: 410px;">
+          <div class="s-center">
+              <div class="img-box" style="width: 728px; box-sizing: content-box;">
+                  <div class="layui-carousel" style="width: 728px; height: 410px;" id="test1" lay-filter="test1" lay-anim="" lay-indicator="inside" lay-arrow="none">
+                    {{data name="单职业移动端轮播图 "}}
+					<div class="items" carousel-item="">
+						{{foreach from=$DATA['单职业移动端轮播图'].list key=k item=item}}
+							<div class="{{if $k == 0}}layui-this{{/if}}">
+								<img src="{{$item.thumb}}" width="729" height="410" ondragstart="return false" style="position: relative; left: -1px; top: 0px;">
+							</div>
+						{{/foreach}}
+                    </div>
+					<div class="layui-carousel-ind">
+						 <ul>
+						{{foreach from=$DATA['单职业移动端轮播图'].list key=k item=item}}
+								<li class="{{if $k == 0}}layui-this{{/if}}"></li>
+						{{/foreach}}
+						</ul>
+					</div>
+				</div> 
+              </div>
+          </div>
+      </div>
+
+
+      <!--联系我们-->  
+    <div class="titleimg2">
+          <img src="{{$DATA['单职业移动端大图']['list'][2]['thumb']}}">
+    </div>
+    <div>
+	{{data name="单职业移动端联系方式"}}
+        <div class="tel" id="tel">
+			{{$DATA['单职业移动端联系方式']}}
+        </div>
+	</div>
+    <div class="bottom" id="bottom">
+		{{data name="单职业移动端底部信息"}}
+			{{$DATA['单职业移动端底部信息']}}
+	</div>
+</div>
+<script>
+window.onload=function(){
+layui.use(['carousel', 'form'], function(){
+var carousel = layui.carousel,
+    form = layui.form;
+var $=layui.$;
+var imageWidth=1242;
+var imageHeight=2208;
+var containerWidth=525;
+var containerWidthExpanded=728;
+var containerHeight=660;
+var imageWidthScaled=containerWidth;
+var imageHeightScaled=Math.round(imageHeight*imageWidthScaled/imageWidth);
+
+var isFirstImg=true;
+$("#test1").find("img").each(function(){
+ if(this.width===0 || this.height===0){
+   $(this).parent().remove();
+ }else if(isFirstImg && this.width && this.height){
+      if(this.width>=this.height){
+          containerWidth=containerWidthExpanded;
+          $(".s-left,.s-right").hide();
+          $(".img-box").css("width",containerWidth+"px");
+          $(".img-box").css("box-sizing","content-box");
+      }
+      isFirstImg=false;
+      imageWidth=this.width;
+      imageHeight=this.height;
+      imageWidthScaled=containerWidth;
+      imageHeightScaled=Math.round(imageHeight*imageWidthScaled/imageWidth);
+      containerHeight=imageHeightScaled;
+ }
+});
+$("#test1").find("img").each(function(){
+  var imageWidthScaledt=imageWidthScaled;
+  var imageHeightScaledt=imageHeightScaled;
+  if(this.width*imageHeightScaled>this.height*imageWidthScaled){
+      imageWidthScaledt=Math.ceil(this.width*imageHeightScaled/this.height);
+  }else if(this.width*imageHeightScaled<this.height*imageWidthScaled){
+      imageHeightScaledt=Math.ceil(this.height*imageWidthScaled/this.width);
+  }
+  $(this).attr("width",imageWidthScaledt);
+  $(this).attr("height",imageHeightScaledt);
+  $(this).attr("ondragstart","return false");
+  $(this).css("position","relative");
+  $(this).css("left",((containerWidth-imageWidthScaledt)>>1)+"px");
+  $(this).css("top",((containerHeight-imageHeightScaledt)>>1)+"px");
+});
+$(".scroll-img").css("height",containerHeight+'px');
+
+//常规轮播
+carousel.render({
+elem: '#test1',
+width:  containerWidth+'px',
+height: containerHeight+'px',
+arrow: 'none',
+});
+
+
+var carousel = layui.carousel;
+var currentObj = null;
+
+//监听轮播切换事件
+carousel.on('change(test1)', function(obj){ 
+  currentObj = obj;
+  console.log(obj)
+});
+
+
+$("#test1")[0].ontouchstart=$("#test1")[0].onmousedown=function(event){
+  var target=event.currentTarget;
+  var mx0=event.targetTouches && event.targetTouches[0]?event.targetTouches.pageX:(event.pageX||event.clientX);
+  target.mx0=mx0;
+}
+
+$("#test1")[0].ontouchend=$("#test1")[0].onmouseup=function(event){
+  var target=event.currentTarget;
+  var mx=event.targetTouches && event.targetTouches[0]?event.targetTouches.pageX:(event.pageX||event.clientX);
+  var rangeMin=50;
+  if(target.mx0!=null && !isNaN(target.mx0)){
+      if(mx-target.mx0<-rangeMin){
+          $(".s-right button").trigger("click");
+      }else if(mx-target.mx0>=rangeMin){
+          $(".s-left button").trigger("click");
+      }
+  }
+  target.mx0=null;
+}
+});
+}
+</script>
+</body>
+</html>

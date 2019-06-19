@@ -1,0 +1,57 @@
+<div class="top">
+      <div class="logo">
+        <img src="/images/2018/lianyun/lznh/index/logo.png" alt="龙之怒吼">
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a  href="yz">
+              <p>官网首页</p>
+            </a></li>
+          <li><a href="#page1">
+              <p>游戏资讯</p>
+            </a></li>
+          <li><a href="#page2">
+              <p>职业介绍</p>
+            </a></li>
+            <div class="logo_width"></div>
+          <li><a href="#page3">
+              <p>游戏特色</p>
+            </a></li>
+          <li><a href="http://q.url.cn/CDK30l?_type=wpa&qidian=true" target="_blank">
+              <p>客服联系</p>
+            </a></li>
+            <li class="Attention"><a href="javascript:;">
+              <p>关注我们</p>
+            </a>
+            <div class="wrap">
+              <p>扫一扫关注我们</p>
+              <img src="/images/2018/lianyun/lznh/index/ios_code.png" width="100%">
+            </div>
+        </li>
+        </ul>
+      </div>
+      <div class="palyer">
+        <span></span>
+        <i></i>
+        <em></em>
+      </div>
+      <div class="download">
+		{{data name="lz天使盟约下载二维码"}}
+		{{foreach from=$DATA['lz天使盟约下载二维码'].list item=item}}
+			<div class="{{$item['title']}}_code">
+				  <img src="{{$item['thumb']}}">
+				<p>{{if $item.title == 'ios'}}IOS{{else}}安卓{{/if}}扫码下载</p>
+			</div>
+		{{/foreach}}
+		
+        <div class="down">
+		{{foreach from=$DATA['lz天使盟约下载二维码'].list item=item}}
+			<a href="{{$item['url']}}" class="{{$item['title']}}_down"></a>
+		{{/foreach}}
+        </div>
+        <div class="gift_wrap" data-gid='1336'>
+          <div class="gift"></div>
+          <div class="get"></div>
+        </div>
+      </div>
+    </div>

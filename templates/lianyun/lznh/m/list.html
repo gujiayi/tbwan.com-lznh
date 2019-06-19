@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>龙之怒吼官网</title>
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/m_resetCss.css">
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/m_common.css">
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/m_list.css">
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/m_share.css">
+</head>
+
+<body>
+  <div class="container">
+    {{include file="lznh/common/m_header.html"}}
+    <div class="page2">
+      <div class="tab_wrap">
+        <ul class="tab clearfix">
+          <li class="tab-item active"><span>最新</span></li>
+          <li class="tab-item">新闻</li>
+          <li class="tab-item">公告</li>
+          <li class="tab-item">玩家攻略</li>
+        </ul>
+        <div class="tab_list">
+          <div class="main selected">
+            <ul>
+              {{foreach from=$datas['newest'] item=item key=k}}
+              {{if $k<$pageSize}}
+              <li><a href="/lznh/detail/?id={{$item.id}}"><span class="news_list">{{$item.title}}</span><span
+                    class="times">{{$item.pubdate|date_format:'%Y-%m-%d'}}</span></a></li>
+              {{/if}}
+              {{/foreach}}
+            </ul>
+            <div class="pagination">
+              <p class="page" data-count={{ceil(count($datas['newest'])/$pageSize)}}>{{$newestlist}}</p>
+            </div>
+          </div>
+          <div class="main">
+            <ul>
+              {{foreach from=$datas['news'] item=item key=k}}
+              {{if $k<$pageSize}}
+              <li><a href="/lznh/detail/?id={{$item.id}}"><span class="news_list">{{$item.title}}</span><span
+                    class="times">{{$item.pubdate|date_format:'%Y-%m-%d'}}</span></a></li>
+              {{/if}}
+              {{/foreach}}
+            </ul>
+            <div class="pagination">
+              <p class="page" data-count={{ceil(count($datas['news'])/$pageSize)}}>{{$newelist}}</p>
+            </div>
+          </div>
+          <div class="main">
+            <ul>
+              {{foreach from=$datas['notice'] item=item key=k}}
+              {{if $k<$pageSize}}
+              <li><a href="/lznh/detail/?id={{$item.id}}"><span class="news_list">{{$item.title}}</span><span
+                    class="times">{{$item.pubdate|date_format:'%Y-%m-%d'}}</span></a></li>
+              {{/if}}
+              {{/foreach}}
+            </ul>
+            <div class="pagination">
+              <p class="page" data-count={{ceil(count($datas['notice']))/$pageSize}}>{{$noticelist}}</p>
+            </div>
+          </div>
+          <div class="main">
+            <ul>
+              {{foreach from=$datas['strategy'] item=item key=k}}
+              {{if $k<$pageSize}}
+              <li><a href="/lznh/detail/?id={{$item.id}}"><span class="news_list">{{$item.title}}</span><span
+                    class="times">{{$item.pubdate|date_format:'%Y-%m-%d'}}</span></a></li>
+              {{/if}}
+              {{/foreach}}
+            </ul>
+            <div class="pagination">
+              <p class="page" data-count={{ceil(count($datas['strategy'])/$pageSize)}}>{{$strategylist}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{include file="lznh/common/m_footer.html"}}
+
+  </div>
+</body>
+<script src="/js/jquery.js"></script>
+<script src="/js/2018/lianyun/lznh/jquery.qrcode.min.js"></script>
+<script src="/js/2018/lianyun/lznh/m_common.js"></script>
+<script>
+ var type = "{{$type}}";
+function select() {
+  var arr = ['最新', '新闻', '公告', '玩家攻略']
+  arr.forEach((item, index) => {
+    if (type.indexOf(item) >= 0) {
+      addclass(index + 1)
+    }
+  });
+  function addclass(num) {
+    $('.tab li:nth-child(' + num + ')').addClass('active').siblings().removeClass('active');
+    $(".page2 .main").eq(num - 1).addClass("selected").siblings().removeClass("selected");
+    pagination()
+  }
+}
+$('#code').qrcode(link);
+select()
+
+</script>
+
+</html>

@@ -1,0 +1,46 @@
+/****** 导航部分 ******/
+.login_wrapper{width:1000px; margin:0 auto; position:relative;}
+.top_menu{height:70px; background-color:#fff;}
+.top_menu .logo,.pay_header .logo{ float:left;}
+.top_menu .logo{padding-right:56px;}
+.top_menu ul{float:right;}
+.top_menu li{width:90px; height:70px; float:left; display:inline; margin-left:6px;}
+.top_menu li a{display:block; width:100%; height:100%; text-align:center; font:16px/70px \5FAE\8F6F\96C5\9ED1; color:#333; position: relative;}
+.top_menu li a em { width: 14px; height: 14px; line-height: 4px; *line-height: 14px; font-size: 56px; text-align: left; color: #f00; overflow: hidden; position: absolute; top: 18px; right: 4px; *top: 14px; _top: 16px;}
+.top_menu li a:hover,.top_menu li a.on{color:#fff!important; background:#03b4f5; text-decoration:none; font-weight:bold;}
+.top_menu li a.on{-webkit-transition:all linear 0.2s;-ms-transition:all linear 0.1s;-o-transition:all linear 0.1s;-mz-transition:all linear 0.1s;transition:all linear 0.1s;}
+.g-sidefun { display: none;}
+
+
+input:-webkit-autofill{-webkit-box-shadow: 0 0 0 1000px #fff inset;}
+body{background-color:#fff; overflow-x:hidden;}
+.middle_main{height:716px; *overflow:hidden; position:relative;}
+.middle_body{position:absolute; width:100%; top:50%; margin-top:-358px;}
+.middle_body .commer_foot{background:none;}
+.login_ban{width:896px; height:449px; margin:0 auto; padding-top:42px; position:relative;}
+.form_box{width:276px; padding:11px 15px; background-color:#fff; border-radius:5px; color:#666;}
+.title_box{height:45px; font:20px/44px \5FAE\8F6F\96C5\9ED1;}
+.form_tips{height:30px;}
+.form_tips p{height:22px; font:12px/22px \5b8b\4f53; border:1px solid #03b4f5; padding-left:33px; background:#f0fbff url(/images/2018/lianyun/login/tips.jpg?201608031135) left center no-repeat;}
+.form_item{height:39px; padding-left:43px; border:1px solid #e1dede; background-color:#fff; margin-bottom:14px;}
+.form_item.error{border:1px solid #03b4f5;}
+.form_item input{display:block; width:212px; height:25px; margin-top:7px; font:14px/25px \5b8b\4f53; border:none; background:none; outline:0 none;}
+.form_item input::-webkit-input-placeholder{color: #999;}
+.form_item input:-moz-placeholder{color:#999;}
+.form_item label{position:absolute; width:33px; height:39px; margin-left:-43px; background:url(/images/2018/lianyun/login/login_icon.jpg?201608031135) 0 0 no-repeat;}
+.form_item.error label.c_account_icon{background-position:-33px 0;}
+.form_item label.c_password_icon{background-position:0 -39px;}
+.form_item.error label.c_password_icon{background-position:-33px -39px;}
+.f_msg{color:red; font:12px/24px \5b8b\4f53; text-align:center; padding:6px 0;}
+.forgot_l{height:32px; font:12px/32px \5b8b\4f53; color:#979797;}
+.forgot_l input,.forgot_l label{display:inline-block; *display:inline; zoom:1; vertical-align:middle;}
+.forgot_l label{padding-left:5px;}
+.forgot_l a,.f_quick{color:#ff5d13;}
+.forgot_l a:hover,.f_quick:hover{color:#00baff;}
+.f_submit{height:65px; border-bottom:1px solid #d9d9d9;}
+.f_submit input{display:block; width:100%; height:48px; border:none; background-color:#00baff; font:20px/48px \5FAE\8F6F\96C5\9ED1; color:#fff; border-radius:5px; cursor:pointer;}
+.f_submit input:hover{background-color:#1ec1fe;}
+.f_links{padding-top:16px; font:12px/22px \5b8b\4f53;}
+.f_qq{float:left; height:22px; padding-left:24px; background:url(/images/2018/lianyun/login/f_qq.jpg?201608031135) left center no-repeat;}
+.commer_foot a{text-decoration:none;}
+#banner{height:490px; width:100%; position:relative;background:#55a5fe url(/images/2018/lianyun/login/user-banner.jpg?201608031135) center top no-repeat;}

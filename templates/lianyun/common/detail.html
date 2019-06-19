@@ -1,0 +1,23 @@
+<div class="right">
+          <div class="nav_wrap">
+            <div class="nav_title">{{$data.typename}}</div>
+            <div class="nav">当前位置：<a href="/{{$game}}">官网首页 </a>> {{$data.typename}}</div>
+          </div>
+          <div class="details">
+            <h3>{{$data.title}}</h3>
+            <div class="sub">
+              <p><span class="resource">来源：{{$data.source}} </span>
+                <span class="times">时长：{{$data.pubdate}}</span>
+              </p>
+            </div>
+            <div class="text_wrap">
+              {{$data.content}}
+            </div>
+          </div>
+          <div class="article">
+            {{foreach from=$recommend key=k item=item}}
+            <a href="/{{$game}}/detail/?id={{$item.id}}" {{if $k==0}}class="prev" {{else}}class="next"
+              {{/if}}>{{if $k==0}}上{{else}}下{{/if}}一篇：{{$item.title}}</a>
+            {{/foreach}}
+          </div>
+        </div>

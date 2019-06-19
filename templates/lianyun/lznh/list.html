@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>龙之怒吼官网</title>
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/resetCss.css">
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/common.css">
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/list.css">
+
+
+</head>
+
+<body>
+  <div class="container">
+    {{include file="lznh/common/header_v1.html"}}
+    <div class="content">
+      <div class="list_wrap">
+        <div class="left">
+          <div class="code">
+            {{data name="lz天使盟约下载二维码"}}
+            {{foreach from=$DATA['lz天使盟约下载二维码'].list item=item}}
+            <div class="{{$item['title']}}_code">
+              <img src="{{$item['thumb']}}">
+              <p>{{if $item.title == 'ios'}}IOS{{else}}安卓{{/if}}扫码下载</p>
+            </div>
+            {{/foreach}}
+          </div>
+          <div class="download">
+            {{foreach from=$DATA['lz天使盟约下载二维码'].list item=item}}
+            <a href="{{$item['url']}}">
+              <div class="{{$item['title']}}_down"></div>
+            </a>
+            {{/foreach}}
+
+
+          </div>
+          {{data name="专题文章左侧客服"}}
+          {{$DATA['专题文章左侧客服']}}
+        </div>
+		{{include file="common/list.html"}}
+      </div>
+    </div>
+    <div class='clearfix'></div>
+    {{include file="lznh/common/footer.html"}}
+    <!-- 遮罩 -->
+    <div class="login-layer"> </div>
+    {{include file="lznh/common/video.html"}}
+  </div>
+  </div>
+
+</body>
+
+<script src="/js/jquery.js"></script>
+<script src="/js/2018/lianyun/lznh/common.js"></script>
+<script>
+  var type = "{{$type}}";
+  var typeid = {{$typeid}};
+  function select() {
+    var arr = ['最新', '新闻', '公告', '玩家攻略']
+    arr.forEach((item, index) => {
+      if (type.indexOf(item) >= 0) {
+        addclass(index + 1)
+      }
+    });
+    function addclass(num) {
+      $('.tab li:nth-child(' + num + ')').addClass('active').siblings().removeClass('active');
+      $(".right .main").eq(num - 1).addClass("selected").siblings().removeClass("selected");
+      pagination()
+    }
+  }
+
+  select()
+</script>
+
+</html>

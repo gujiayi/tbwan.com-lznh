@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/** 注册页 **/
+.register_bg{background:url(/images/2018/lianyun/register_bg.jpg?201608031135) no-repeat top center;}
+.register_main{background:url(/images/2018/lianyun/register_main.jpg?201608031135) no-repeat top center; height:1045px; width:1000px; margin:0 auto; padding-top:42px;}
+
+.register_page{ padding:70px 0 0 235px; width:600px; height:600px;}
+.reg_page_left{float:left; width:340px;}
+.reg_page_right{float:left; height:530px; padding-left:40px; padding-top:30px; width:210px; color:#888; border-left:1px solid #dedede;}
+.reg_page_right ul li{float:left; padding-right:18px;}
+.reg_page_right ul li:first-child{border-right:1px dotted #b1b1b1;}
+.reg_page_right li a em{width:16px; height:16px; display:inline-block; vertical-align:middle; overflow:hidden; margin-right:5px;}
+.qq_gray{background:url(/images/2018/lianyun/index_little_icons.png?201608031135) no-repeat -36px 0;}
+a:hover .qq_gray{background-position:-36px -16px;}
+.weibo_gray{background:url(/images/2018/lianyun/index_little_icons.png?201608031135) no-repeat -53px 0; margin-left:18px;}
+a:hover .weibo_gray{background-position:-53px -16px;}
+
+.reg_title{ height:70px; width:600px; line-height:26px;  margin:0 0px 30px 0; color:#665852;}
+.reg_title h2{color:#ff6a00; font-size:20px; font-family:microsoft yahei;}
+.register ul{  height: auto; margin-bottom:40px;}
+.register ul li{ padding-bottom:16px; width:297px; color:#666; position:relative;}
+.register ul li b{ font-weight:normal; color:#999; display:block;}
+.register ul li span{ width:94px; position:absolute; top:8px; left:5px; line-height:26px; font-size:14px; color:#b8b8b8}
+.register ul li .reg_input,.register ul li.sort_input input{ height:26px; padding:8px 0; text-indent:98px; line-height:26px; width:290px;border:solid 1px #ccc; padding-left:5px; *vertical-align:middle;}
+.register ul li input[type=text]:focus,.register ul li input[type=password]:focus{border:1px solid #76c4f2; color:#3098d5; outline:none; font-weight:bold;}
+.register ul .ac input.check{width:13px; height:13px; vertical-align:middle; margin-right:4px;}
+.register ul li .index_button{ margin-top:0; }
+.register ul li.addicted_tip{border-top:1px dotted #b1b1b1; padding:15px 0 0 90px; height:65px; margin-top:10px;color:#888;}
+.register ul li img{ vertical-align:middle;}
+.register ul li label{ display:none; position:relative; bottom:-6px;}
+label.error,label.correct{background:url(/images/2018/lianyun/index_little_icons.png?201608031135) no-repeat left center; _background:url(/images/2018/lianyun/index_little_icons_ie6.gif?201608031135) no-repeat left center; padding-left:22px; vertical-align:middle; }
+label.correct{ background-position: -54px -53px;} 
+label.error{background-position: -54px -35px; color:#fe0202; }
+
+.register li span em{ display:inline-block; width:28px; height:26px; margin-right:4px; background:url(/images/2018/lianyun/reg_btns.gif?201608031135) no-repeat left center; vertical-align:middle;}
+.register li span em.reg_ico1{background-position:0 0;}
+.register li span em.reg_ico2{background-position:0 -26px;}
+.register li span em.reg_ico3{background-position:0 -52px;}
+.register li span em.reg_ico4{background-position:0 -78px;}
+.register li span em.reg_ico5{background-position:0 -104px;}
+
+.register_main .commer_foot{background:none; border:none; margin-top:20px; color:#fff;}
+.register_main .commer_foot a{color:#fff;}
+ .index_button {width: 272px; height: 48px; color: #fff; font-weight: bold; text-align: center; line-height: 48px; font-size: 16px; margin-top: 15px; border: none; border-radius: 4px; background: #00baff; cursor: pointer; }
+.g-footer { color: #fff; line-height: 30px; padding: 38px 0 0px 0; background: transparent;}
+.g-footer a { color: #fff;}
+.g-footer .g-main { width: auto;}
+.g-sidefun { display: none;}

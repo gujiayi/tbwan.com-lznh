@@ -1,0 +1,11 @@
+<div class="top">
+  <a href="#" class="db_a1">logo</a>
+  <p class="db_p1"><img src="/images/2018/lianyun/lznh/m_index/logo.png" width="100%"></p>
+  <p class="db_p2">3D魔幻人龙双形态手游</p>
+ {{data name="lz天使盟约下载二维码"}}
+{{foreach from=$DATA['lz天使盟约下载二维码'].list item=item}}
+	{{if $item.title == $deviceType}}
+		<a href="{{$item['url']}}" class="db_a2 button">立即下载</a>
+	{{/if}}
+{{/foreach}}
+</div>

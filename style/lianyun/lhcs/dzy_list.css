@@ -1,0 +1,17 @@
+.container {
+  background:#231200
+}
+.top{
+  height:901px;
+  background: url(/images/2018/lianyun/lhcs/header.jpg) no-repeat 45% center !important;
+}
+
+.list_wrap .left{
+  width:30%;
+  height:681px;
+  background: url(/images/2018/lianyun/lhcs/list/side.png) no-repeat;
+}
+
+.list_wrap .nav_wrap{
+  background: url(/images/2018/lianyun/lhcs/list/notice.jpg) no-repeat;
+}

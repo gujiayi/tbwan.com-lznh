@@ -1,0 +1,119 @@
+@charset "utf-8";
+body{background:#fff}
+.login-layer{
+  display:none;
+  position: relative;
+  position: absolute;top:0;left:0;
+  width:100%;
+  height:100%;
+  z-index: 1000;
+  background: #000;filter: alpha(opacity=80);
+  background:rgba(0,0,0,0.8);
+}
+
+#register,#login{display:none;}
+.mod-login-wp{ z-index: 9999;width:234px;padding:16px 34px;background:#D8DBEA;background: #fff;filter: alpha(opacity=70);background:rgba(255,255,255,.7);position: fixed;top:50%;left:50%;margin-left:-125px;margin-top: -169px;}
+.login-tab{width:100%;overflow:hidden}
+.login-tab-1 li{width: 100%;}
+.login-tab-2 li{width: 50%;}
+.login-tab li{height:37px;line-height:37px;cursor:pointer;border-bottom:1px solid #fff;text-align:center;color:#595757;font-size:14px;float:left}
+.login-tab .active{border-bottom-color:#d70023}
+.login-account{margin-top:32px}
+.login-account .w-item{height:38px;margin-top:12px;position:relative}
+.login-account .w-item label{width:34px;height:38px;position:absolute;top:0;left:0}
+.login-account .w-item input{width:200px;height:14px;padding:12px 0 12px 34px;font-size:14px;color:#000;border:0 none;-webkit-border-radius:5px;border-radius:5px;background:#fff}
+.login-account .btn-tologin{display:block;width:100%;height:40px;margin-top:10px;color:#fff;font-size:16px;border:0 none;-webkit-border-radius:4px;border-radius:4px;cursor:pointer;background:#e1405a;font-family:'microsoft yahei'}
+.login-account .btn-tologin:hover {background: #f6587b;}
+.login-account .user-opt{height:14px;line-height:14px;margin:10px 0 18px;-moz-user-select:none; -webkit-user-select:none; -ms-user-select:none; -khtml-user-select:none; user-select:none;}
+.icon-cb{display:inline-block;vertical-align:top;width:13px;height:13px;margin-right: 6px;}
+.login-account .tips{height:12px;line-height:12px;color:#e1405a;margin:10px 0}
+.login-account .user-third{height:24px;margin:10px 0}
+.login-account .freereg {color:#e1405a;float: right; cursor: pointer;}
+.login-account .freereg:hover { text-decoration: underline; }
+.third-login-qq,.third-login-wx,.third-login-wb{display:inline-block;width:24px;height:24px;background:url(/images/2017/third.png?201708251703) no-repeat;*margin-right:4px;}
+.third-login-wx{background-position:-27px 0}
+.third-login-wb{background-position:-53px 0}.login-account .icon-user{background-position:2px 4px}.login-account .icon-lock{background-position:-38px 4px}.icon-cb{background-position:0px -40px}.icon-cbed{background-position:-23px -40px}.login-account .icon-user,.login-account .icon-lock,.icon-cb,.icon-cbed,.icon-code{background-image: url(/images/2018/lianyun/lhcs/login_z.png);background-repeat: no-repeat;}
+.check{width:30px !important; vertical-align: top;margin-top:3px}
+.login-account .icon-code{background-position:-37px -26px}
+.login-layer .close{
+  position: absolute;
+  top:12%;
+  right:35%;
+  font-size:30px;
+  color:#000
+}
+.icon-cb {
+  display: inline-block;
+  vertical-align: middle;
+  width: 17px;
+  height: 17px;
+  position: relative;
+  top: -2px;
+  margin-right: 6px;
+  background-image: url(/images/2018/lianyun/lhcs/register.png?201812151727);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+.icon-cbed {
+  background-position: -27px 0px;
+}
+
+@media screen and (max-width:1000px){
+  body{
+    font-size:30px;
+  }
+  .mod-login-wp{
+    width:434px;
+    padding:26px 64px;
+    margin-left:-285px;
+    margin-top: -369px;
+  }
+  .login-tab li{
+    height: 77px;
+    line-height: 77px;
+    font-size:40px;
+  }
+  .login-account .w-item{
+    height: 68px;
+    margin-top: 32px;
+  }
+  .login-account .w-item label{
+       top: 16px;
+  }
+  .login-account .w-item input{
+    width: 400px;
+    height: 44px;
+    padding: 12px 0 12px 32px;
+    font-size: 23px;
+  }
+
+  .login-account .btn-tologin{
+    height: 80px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 40px;
+  }
+  .login-account .tips{
+    height: 32px;
+    line-height: 32px;
+    font-size:23px;
+  }
+  .login-account .user-third{
+    height: 44px;
+    margin: 30px 0 10px;
+    font-size:30px;
+  }
+  .php-code{
+    width:90px !important;
+    height:60px !important;
+  }
+  .icon-cb{
+    top: -6px;
+  }
+  .w-item a{
+     font-size:23px;
+  }
+}
+
+
+

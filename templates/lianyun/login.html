@@ -1,0 +1,64 @@
+<div class="login-layer" >	</div>
+<div id="login" class="mod-login-wp">
+    <ul class="login-tab login-tab-1">
+      <li>耐玩游戏账号登录</li>
+    </ul>
+    <div class="login-tab-con">
+      <div class="login-item login-account">
+        <form method="post" class="login-form" id="login_form">
+          <input type="hidden" name="do" value="login">
+          <input type="hidden" name="gourl" value="{{$gourl}}" />
+          <input name="login_save" type="hidden" value="1" id="login-save">
+          <div class="w-item"> <label for="username" class="icon-user"></label> <input name="username" id="username" type="text" placeholder="帐号"> </div>
+          <div class="w-item"> <label for="password" class="icon-lock"></label> <input name="password" id="password" type="password" placeholder="密码"> </div>
+          
+          <input class="btn-tologin" type="button" value="登 录" onclick="login()">
+          <p class="tips" id="login-tips"></p>
+          <div class="user-third">
+            <div  class="freereg">免费注册<i></i></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<!-- ---注册---- -->
+<div id="register" class="mod-login-wp register-account">
+    <ul class="login-tab login-tab-1">
+      <li>耐玩游戏账号注册</li>
+    </ul>
+    <div class="login-tab-con">
+      <div class="login-item login-account">
+        <form class="login-form"  id="form-register" method="post">
+            <div class="w-item">
+                <label  class="icon-user"></label>
+                <input type="text" pattern="\w{4,20}" name="LOGIN_ACCOUNT" required  placeholder="用户名(4~20个字符)" id="USERNAME">
+            </div>
+            <div class="w-item">
+                <label  class="icon-lock"></label>
+                <input type="password"  name="PASSWORD" required pattern="\w{6,}" placeholder="密码(6~12个字符)" id="PASSWORD">
+            </div>
+            <div class="w-item">
+                <label  class="icon-lock"></label>
+                <input type="password"  name="PASSWORD1" required pattern="\w{6,}" placeholder="确认密码(6~12个字符)" id="PASSWORD1">
+            </div>
+            <div class="w-item" style="position:relative;">
+                <label  class="icon-code"></label>
+                <input type="text"  name="code" required id="code" placeholder="请输入验证码" >
+                <img style="position:absolute;right:0;top:05px;" onClick="this.src= '{{$CONFIG.app_url}}/code.php?' +Math.random();" src="{{$CONFIG.app_url}}/code.php?{{$smarty.now}}" title="点击更换" class="php-code" />
+            </div>
+            <div class="w-item ">
+              <input class="none ckterms" type="checkbox" name="TERMS" id="">
+              <i name="AGREEMENT" class="icon-cb" id="agreement-reg"></i>
+              <a href="/yhxy.html" target="_blank">我已阅读并同意《用户注册服务协议》</a>
+            </div>
+            <input type="hidden" name="gourl" value="{{$gourl}}" />
+            <input type="hidden" name="is_ajax" value="1" />
+            <input class="btn-tologin" type="button" value="注 册" onclick="registerAccount()">
+            <p class="tips" id="register-tips"></p>
+            <div class="user-third">
+              <div  class="freereg">账号登录<i></i></div>
+            </div>
+        </form>
+      </div>
+  </div>
+</div>

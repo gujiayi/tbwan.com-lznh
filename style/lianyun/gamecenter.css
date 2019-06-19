@@ -1,0 +1,18 @@
+.game-select-box { height: 90px; margin: 30px 0; background: url(/images/2018/lianyun/gb-typesel.jpg?201608171045) no-repeat;}
+.game-type, .game-theme { width: 450px; height: 80px; padding: 5px 40px 5px 110px; float: left;}
+.game-select-box a { display: inline-block; color: #999; font-size: 14px; padding: 2px 8px; margin: 2px 0 0 5px; border-radius: 15px;}
+.game-select-box a:hover, .game-select-box .active { color: #fff; background: #03b4f5;}
+.game-content-box {}
+.game-list { margin-right: -30px;}
+.game-list li { width: 350px; height: 190px; padding: 20px 15px; margin: 0 30px 30px 0; transition: all 0.3s ease; float: left;}
+.game-list li:hover { box-shadow: 0 0 5px #03b4f5;}
+.game-list .img { display: block; width: 96px; height: 96px; border-radius: 15px; float: left;}
+.game-list .info { width: 235px; padding-left: 15px; line-height: 30px; font-size: 14px; color: #999; float: left;}
+.game-list .name { font-size: 22px; color: #666; transition: color 0.3s ease;}
+.game-list .name:hover, .game-list li:hover .name { color: #03b4f5;}
+.game-list .row em { color: #03b4f5;}
+.game-list .col-1 { display: inline-block; width: 110px;}
+.game-list .col-2 { display: inline-block; width: 120px;}
+.game-list .intro { height: 44px; font-size: 12px; line-height: 22px; margin: 4px 0 14px 0;}
+.game-list .enterhome { margin-right: 10px;}
+.game-list .enterhome:hover { border-color: #ff7d26; background: #ff7d26;}

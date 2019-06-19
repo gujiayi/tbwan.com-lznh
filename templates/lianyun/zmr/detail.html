@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>沉默单职业官网  </title>
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/resetCss.css">
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/common.css">
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/list.css">
+  <link rel="stylesheet" href="{{$CONFIG.resource}}/style/2018/lianyun/lhcs/style.css?{{$CONFIG.build}}">
+  <link rel="stylesheet" href="/style/2018/lianyun/lhcs/zmr_list.css">
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="top">
+      <div class="logo">
+        <img src="images/2018/lianyun/lhcs/cm_logo.png" alt="logo" />
+            </div>
+    </div>
+    <div class="content">
+      <div class="list_wrap">
+        <div class="left">
+          <div class="code">
+            {{data name="传奇掌门人下载二维码"}}
+            {{foreach from=$DATA['传奇掌门人下载二维码'].list item=item}}
+            <div class="{{$item['title']}}_code">
+              <img src="{{$item['thumb']}}"  width="100%">
+              <p>{{if $item.title == 'ios'}}IOS{{else}}安卓{{/if}}扫码下载</p>
+            </div>
+            {{/foreach}}
+          </div>
+          <div class="download">
+            {{foreach from=$DATA['传奇掌门人下载二维码'].list item=item}}
+            <a href="{{$item['url']}}" class="{{$item['title']}}_down">
+            </a>
+            {{/foreach}}
+
+
+          </div>
+          {{data name="专题文章左侧客服"}}
+          {{$DATA['专题文章左侧客服']}}
+        </div>
+        {{include file="common/detail.html"}}
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    {{include file="footer_v1.html"}}
+
+  </div>
+  </div>
+
+</body>
+
+<script src="/js/jquery.js"></script>
+<script type="text/javascript" src="{{$CONFIG.resource}}/js/2018/lianyun/lhcs/common.js?{{$CONFIG.build}}"></script>
+</html>

@@ -1,0 +1,50 @@
+<div class="right">
+          <div class="nav_wrap">
+            <div class="nav_title">公告中心</div>
+            <div class="nav">当前位置：<a href="/{{$game}}">官网首页 </a>> 公告中心</div>
+          </div>
+          <div class="list">
+            <div class="tab_wrap">
+              <ul class="tab clearfix">
+			   <li onmouseenter="tabNews(this)" class="tab-item"><span>最新</span></li>
+			  {{foreach from=$datas['type'] item=item}}
+                <li onmouseenter="tabNews(this)" class="tab-item"><span>{{$item}}</span></li>
+			 {{/foreach}}
+              </ul>
+              <div class="tab_list">
+			  <!--默认最新 -->
+			  <div class="main selected">
+                  <ul class="wrap">
+                    {{foreach from=$datas['newest'] item=item key=k}}
+                    {{if $k<$pageSize}}
+                    <li><a href="/{{$game}}/detail/?id={{$item.id}}"><span class="news_list">{{$item.title}}</span><span
+                          class="times">{{$item.pubdate|date_format:'%Y-%m-%d'}}</span></a></li>
+                    {{/if}}
+                    {{/foreach}}
+                  </ul>
+                  <div class="pagination">
+                    <p class="page" data-count={{ceil(count($datas['newest'])/$pageSize)}}>{{$pagelist['newest']}}</p>
+                  </div>
+                </div>
+			  {{foreach from=$datas['type'] key=key item=item}}
+                <div class="main">
+                  <ul class="wrap">
+                    {{foreach from=$datas[$key] item=item key=k}}
+                    {{if $k<$pageSize}}
+                    <li><a href="/{{$game}}/detail/?id={{$item.id}}"><span class="news_list">{{$item.title}}</span><span
+                          class="times">{{$item.pubdate|date_format:'%Y-%m-%d'}}</span></a></li>
+                    {{/if}}
+                    {{/foreach}}
+                  </ul>
+                  <div class="pagination">
+                    <p class="page" data-count={{ceil(count($datas[$key])/$pageSize)}}>{{$pagelist[$key]}}</p>
+                  </div>
+                </div>
+			{{/foreach}}
+                
+              </div>
+
+            </div>
+          </div>
+
+        </div>

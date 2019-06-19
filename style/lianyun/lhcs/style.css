@@ -1,0 +1,630 @@
+body,div,ul,ol,li,dl,dt,dd,p,span,a,img,em,input,button,textarea,tr,th,td,h1,h2,h3,h4,h5,h6,h7{margin:0px; padding:0px;}
+body{font-size:12px; font-family:"microsoft yahei"; overflow-x:hidden;}
+ul,ol,li,dl,dt,dd,p,span,a,img,em,input,button,textarea,tr,th,td,h1,h2,h3,h4,h5,h6,h7{list-style-type:none; border:none; font-style:normal; background:none; outline:none;}
+a{color:#403f3f;}
+.clearfix{*zoom:1;}
+.clearfix:after{height:0; font-size:0; display:block; clear:both; overflow:hidden; visibility:hidden; content:"";}
+.f_l{float:left;}
+.f_r{float:right;}
+.indent{text-indent:-999px; overflow:hidden;}
+
+
+ body {
+  position: relative;
+  margin: 0;
+  color: #666;
+  font-size: 12px;
+  line-height: 1.5;
+  min-width: 1098px;
+}
+
+.wrapper{
+  position: relative;
+  width:100%;
+}
+.header{
+  position: relative;
+  height:900px;
+  background:url(/images/2018/lianyun/lhcs/header.jpg) no-repeat center center;
+  background-size:cover;
+}
+.logo{
+  position: absolute;
+  top:50px;
+  left:40px;
+}
+
+.header_wrap{
+  position: relative;
+  max-width:1290px;
+  height:inherit;
+  margin:0 auto;
+  padding-top:513px;
+}
+ .top_btn {
+  display: flex;
+  position: absolute;
+  top:-1px;
+  left:70%;
+  /* z-index:1100; */
+  color:#fff;
+}
+ .top_btn a{
+  height:27px;
+  padding-top:4px;
+  display: inline-block;
+  color:#fff;
+}
+ .game_index{
+  width:103px;
+  padding-left:24px;
+  background:url(/images/2018/lianyun/lhcs/game_bg.png) no-repeat;
+  background-size:contain;
+}
+ .game_kefu{
+  width:117px;
+  padding-left:10px;
+  background:url(/images/2018/lianyun/lhcs/kefu_bg.png) no-repeat;
+  background-size:contain;
+}
+.top_btn i{
+  display:inline-block;
+  width:16px;
+  height:14px;
+  vertical-align: top;
+  margin-right:5px;
+}
+.icon_index{
+  margin-top:4px;
+  background:url(/images/2018/lianyun/lhcs/game.png) no-repeat;
+
+}
+.icon_kefu{
+  margin-top:5px;
+  background:url(/images/2018/lianyun/lhcs/kefu.png) no-repeat;
+}
+
+ .top_btn span{
+  display: inline-block;
+  padding-top:1px;
+  letter-spacing:3px;
+}
+.img_bg{
+  position: absolute;
+  bottom:610px;
+  left:0;
+  width:793px;
+  height:241px;
+  background:url(/images/2018/lianyun/lhcs/get.png) no-repeat;
+  background-size:contain;
+  z-index:999
+}
+ .code_wrap{
+  position: relative;
+  float:left;
+  width:220px;
+  height:182px;
+  margin:50px 0 0 42px;
+}
+.code_wrap .text{
+  position: absolute;
+  right:0;
+  top:2px;
+  width:23px;
+  height:158px;
+  margin-right:14px;
+}
+#android .text{
+  background:url(/images/2018/lianyun/lhcs/andriod.png) no-repeat;
+  background-size:contain;
+}
+#ios .text{
+  background:url(/images/2018/lianyun/lhcs/ios.png) no-repeat;
+  background-size:contain;
+}
+
+.header .img_bg img,.header .img_bg .img_text{
+  position: absolute;
+  top:3px;
+  left:6px;
+  width:155px;
+  height:155px;
+}
+.header .img_bg .img_text{
+  line-height: 155px;
+  font-size:24px;
+  text-align: center;
+}
+.header .code_tab{
+  position: absolute;
+  bottom:0;
+  left:30px;
+  width:70%;
+  height:20px;
+  z-index: 100;
+  
+}
+.header .code_tab li{
+  float:left;
+  padding:8px ;
+ 
+ 
+}
+.header .code_tab span{
+  display: block;
+  width: 30px;
+  height:4px;
+  margin-left:5px;
+  border-radius: 4px;
+   background:rgba(255,255,255,0.4);
+   box-shadow: 0px 2px 5px rgb(0,0,0,0.5)
+}
+.header .code_tab .current{
+  background: #fff;
+}
+.header .button{
+  float:left;
+  vertical-align: top;
+  width:224px;
+  height:160px;
+  margin-left:39px;
+  margin-top:53px;
+}
+
+.header .button .android,.button .ios{
+  display: block;
+  width:230px;
+  height:67px;
+}
+.header .button .ios{
+margin-top:14px;
+}
+ .header .gift{
+ float:left;
+ vertical-align: top;
+  width:208px;
+  height:160px;
+  margin:53px 0 0 26px;
+  cursor:pointer;
+}
+.center{
+  position: relative;
+  margin-top:-170px;
+  width:100%;
+  height:2280px;
+  background:url(/images/2018/lianyun/lhcs/center.png) no-repeat center center;
+  background-size:cover;
+}
+.center .tab_wrap{
+  position: relative;
+  max-width:1290px;
+  margin:0 auto;
+  margin-top:220px;
+  overflow: hidden;
+}
+.wrap_img{
+  width:947px;
+  height:1158px;
+  margin-left: -60px;
+}
+@media screen and (max-width:1024px){
+  .header{
+    background:url(/images/2018/lianyun/lhcs/header.jpg) no-repeat 45% center;
+  }
+}
+
+.wrap_img  img{
+  width:947px;
+}
+
+.center .tab_wrap .tab .title{
+  position: absolute;
+  top:275px;
+  right:33%;
+  width:66px;
+  height:170px;
+  background:url(/images/2018/lianyun/lhcs/tab.png) no-repeat;
+  background-size:contain;
+  z-index:100;
+}
+
+.center .tab_wrap .tab  .title li {
+  width:100%;
+  height:68px;
+  cursor: pointer;
+}
+.center .tab_wrap .tab .title li.current1{
+  background:url(/images/2018/lianyun/lhcs/cur_gril.png) no-repeat;
+  background-size:contain;
+  -webkit-tap-highlight-color:rgba(255,255,255,0)
+}
+.center .tab_wrap .tab .title li.current2{
+  margin-top:-32px;
+  background:url(/images/2018/lianyun/lhcs/cur_boy.png) no-repeat;
+  background-size:contain;
+  -webkit-tap-highlight-color:rgba(255,255,255,0)
+}
+
+.footer{
+  width:100%;
+  background:#120e0c;
+}
+.footer_wrap{
+  display:flex;
+  width:1000px;
+  padding:46px 0;
+  margin:0 auto;
+  color:#999999;
+}
+.footer .left{
+  flex:0 0 380px;
+  width:380px;
+  float:left;
+  border-right:1px solid #999999;
+}
+.footer .left .img{
+  width:100px;
+  height:100px;
+  float:left;
+  margin-right:5%;
+}
+.footer .left img{
+  width:100%;
+  height:100%;
+}
+.footer .left .text{
+  vertical-align: top;
+  padding-top:16px;
+  float:left;
+}
+
+.footer .text .scan_code{
+  font-size:14px;
+  line-height:36px;
+ color:#c62f28;
+}
+
+.footer .text .title{
+  font-size:24px;
+}
+.footer .text .sub{
+  font-size:18px;
+}
+.footer .right{
+  flex:1;
+  width:40%;
+  padding-left:88px;
+  display: inline-block;
+  vertical-align: top;
+}
+.footer .right {
+  color:#999;
+}
+.footer .right .title{
+  font-size:20px;
+}
+
+.footer .right p{
+  font-size:14px;
+  line-height:28px;
+}
+.footer .right i{
+ padding-left:20px;
+}
+.gift_wrap{
+  display: none;
+  position: relative;
+  position: fixed;
+  top:50%;
+  left:50%;
+  margin-left:-367px;
+  margin-top:-145px;
+  z-index: 9999;
+}
+
+.gift_wrap .gift{
+  width:734px;
+  height:289px;
+  background:url(/images/2018/lianyun/lhcs/gift.png) no-repeat center center;
+  background-size:cover;
+}
+.gift_wrap .close{
+  position: absolute;
+  right:-44px;
+  top:8px;
+  width:60px;
+  height:60px;
+  cursor: pointer;
+  background:url(/images/2018/lianyun/lhcs/close.png) no-repeat center center;
+  background-size:cover;
+}
+.gift_wrap p{
+  padding-top:32px;
+  padding-left:-60px;
+  text-align: center;
+  font-size:24px;
+  font-weight: bold;
+  color:#fff;
+
+}
+
+.gift_wrap .title{
+  padding-top:92px;
+  
+}
+.gift_wrap .title h2{
+  width:484px;
+  height:43px;
+  margin:0 auto;
+  background:url(/images/2018/lianyun/lhcs/title.jpg) no-repeat center center;
+  background-size:cover;
+}
+#text{
+  position:fixed;
+  top:50%;
+  left:50%;
+  margin-left:-80px;
+  padding:15px 50px;
+  background-color:#000;
+   color:#fff;
+   font-size:22px;
+   z-index:9999;
+}
+#guide{
+  display:none;
+  position: relative;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+}
+#guide .layer{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 9998;
+  background: #000;filter: alpha(opacity=80);
+  background:rgba(0,0,0,0.8);
+}
+
+#guide .guide{
+  position: absolute;
+  top:0;
+  right:0;
+  width:80%;
+  height:100%;
+  z-index: 9999;
+}
+#guide .icon{
+
+  width:100%;
+  height:inherit;
+  background:url(/images/2018/lianyun/lhcs/guide.png) no-repeat top center;
+  background-size:100%;
+ 
+}
+#guide .text{
+  position: fixed;
+  top:50%;
+  left:50%;
+  margin-left:-256px;
+  width:512px;
+  height:132px;
+  line-height: 132px;
+  text-align: center;
+  border-radius: 100px;
+  border:2px solid #fff;
+  color:#fff;
+  font-size:50px;
+}
+a.call{
+  display:inline-block;
+  width:80px;
+  height:26px;
+  margin-left:20px;
+  text-align: center;
+  background:#f3b700;
+  color:#fff;
+}
+
+.slice_wrap{
+  height:820px;
+ 
+}
+.slice_wrap .list_wrap {
+  overflow: hidden;
+  margin:0 auto;
+  position: absolute;
+  top:311px;
+  left:50%;
+  margin-left:-612px;
+  width:900px;
+  height:445px;
+  padding:50px 0 0 60px;
+  background: url(/images/2018/lianyun/lhcs/list.png) no-repeat;
+}
+.slice_wrap .tab li {
+	float:left;
+  padding: 0 20px;
+  color:#b2b2b2;
+  cursor:pointer;
+  font-size:20px;
+  border-right:2px solid #b2b2b2;
+}
+.slice_wrap .tab li:last-child{
+  border:0
+}
+.slice_wrap .tab li.active {
+	color:#f5ef90;
+}
+
+.slice_wrap .tab_list{
+  position: relative;
+  height:355px;
+  width:900px;
+  margin-top:45px;
+  color:#b2b2b2
+}
+.slice_wrap .tab_list .main{
+  display: none;
+}
+.slice_wrap .tab_list .selected{
+  display: block;
+}
+.slice_wrap .tab_list ul{
+  height:300px;
+  overflow: hidden;
+}
+.slice_wrap .tab_list a:hover span{
+  color:#f88d71;
+}
+.slice_wrap .tab_list li{
+  line-height: 42px;
+}
+.slice_wrap .tab_list .news_list{
+  float: left;
+  width: 560px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color:#b2b2b2;
+  font-size:16px;
+}
+.slice_wrap .tab_list .times{
+  display: block;
+  float: left;
+  padding-left: 40px;
+  color:#b2b2b2;
+  font-size:16px;
+}
+.slice_wrap .tab_list .more{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 25px;
+  margin:0 auto;
+  text-align: center;
+  line-height: 0;
+}
+.slice_wrap .tab_list .more a{
+  display: block;
+  padding:0 20px;
+  color:#b99b8d
+}
+.slice_wrap  .more a:hover{
+  color: #f88d71;
+}
+.slice_wrap .tab_list .line{
+  position: relative;
+  display: block;
+  width:290px;
+  height:25px;
+  border-top: 1px dashed rgba(213,213,213,0.2);
+}
+.slice_wrap .tab_list .line::before{
+  content: '';
+  width:14px;
+  height:14px;
+  position: absolute;
+  top:-8px;
+  display: block;
+  background: url(/images/2018/lianyun/lhcs/notice_icon.png) no-repeat;
+}
+.slice_wrap  .tab_list .line_left::before{
+  right:0;
+}
+.slice_wrap .tab_list .line_right::before{
+  left:0;
+}
+.slice_wrap .code{
+  position: absolute;
+  right:36px;
+  top:166px;
+}
+.slice_wrap .code img{
+  width:100px;
+  height:100px;
+}
+.slice_wrap .code p{
+  color:#fff;
+  line-height: 36px;
+  text-align: center;
+  font-size: 14px;
+}
+.tab_wrap {
+  padding: 28px 0 0 40px;
+}
+.top .logo {
+  left: 16%;
+  margin-left:0;
+}
+.content{
+  font-size: 16px;
+}
+.list_wrap .right{
+  width:60%;
+}
+.list_wrap .left .code{
+  padding:140px 0 0 36px;
+}
+.list_wrap .code>div{
+  width:124px;
+  height:124px;
+  margin-left: 10px;
+  background:#fff;
+}
+.list_wrap .text p {
+  border-bottom: 1px solid #322c2a;
+}
+
+.gy-footer {
+  background: #090f1d;
+}
+.list_wrap .nav_wrap {
+  margin-top: 90px;
+}
+
+.tab li {
+  padding: 16px 54px;
+}
+.tab_list .news_list{
+  width:70%;
+}
+.list_wrap .android_down, .list_wrap .ios_down{
+  display: block;
+}
+.list_wrap .download{
+  height:160px;
+  margin:22px 0 0 66px;
+}
+.list_wrap .text {
+  margin: 23px auto 0;
+}
+.right .text_wrap img{
+width:100% !important;
+height:100% !important;
+}
+@media screen and (min-width:1200px){
+  .center .tab_wrap .tab .title{
+    right:35%;
+  }
+  .list_wrap .right{
+    width:70%;
+  }
+
+  .tab li {
+    padding: 16px 66px;
+  }
+}
+@media (max-width:1000px){
+  .slice_wrap .list_wrap{
+    margin-left:-530px;
+  }
+  .wrap_img{
+    margin-left: -100px;
+  }
+}

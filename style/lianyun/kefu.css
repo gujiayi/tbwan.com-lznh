@@ -1,0 +1,31 @@
+.kefu-banner { width: 100%; height: 450px; background: url(/images/2018/lianyun/kf-banner.jpg?201608171045) top center no-repeat;}
+.kefu-banner .txt { width: 580px; font-size: 14px; color: #fff; line-height: 30px; text-shadow: 0 1px 0 #bbb; position: absolute; top: 230px; left: 575px;}
+.kefu-banner .b-btn { display: block; width: 230px; padding: 16px 0; color: #fff; font-size: 22px; text-align: center; overflow: hidden; border-radius: 5px; border: 1px solid #fff; background: #32c2c4; transition: all 0.3s ease-in; position: absolute; top: 332px;}
+.kefu-banner .b-btn i { display: inline-block; vertical-align: middle; width: 33px; height: 30px; background: url(/images/2018/lianyun/kf-icon.png?201608171045) no-repeat; transition: all 0.3s ease-in; position: relative;}
+.kefu-banner .online-help { font-size: 22px; left: 575px;}
+.kefu-banner .online-help:hover, .kefu-banner .online-kf:hover { border-color: #fff; color: #21c1d3; font-size: 22px; background: #fff;}
+.kefu-banner .online-help i { background-position: 0px 0px; top: -3px;}
+.kefu-banner .online-help:hover i { background-position: -32px 0px;}
+.kefu-banner .online-kf { left: 842px;}
+.kefu-banner .online-kf i { background-position: 0px -30px; top: -2px;}
+.kefu-banner .online-kf:hover i { background-position: -33px -30px;}
+
+.kefu-page { height: 616px; background: url(/images/2018/lianyun/kf-btmbg.jpg?201608171045) bottom center no-repeat;}
+.kefu-page h2 { color: #56c5b2; font-size: 36px; text-align: center; font-weight: normal; padding: 30px 0 0 20px;}
+.kefu-page h3 { color: #999; font-size: 24px; text-align: center; font-weight: normal;}
+.kefu-page .t { width: 1020px; height: 30px; margin: 15px auto; background: url(/images/2018/lianyun/kf-tbg.jpg?201608171045) no-repeat;}
+
+.bbsgame-list { width: 1028px; height: 235px; overflow: hidden; padding: 50px 0 0 82px;}
+.bbsgame-list li { width: 124px; float: left;}
+.bbsgame-list .gap { width: 54px; height: 18px; margin-top: 56px; margin-left: 2px; background: url(/images/2018/lianyun/kf-li.jpg?201608171045) no-repeat;}
+.bbsgame-list .item { }
+.bbsgame-list .item .img { width: 118px; height: 118px; border-radius: 50%; border: 2px solid #fff; box-shadow: 1px 1px 6px #999;}
+.bbsgame-list .item .v { display: block; width: 0px; height: 22px; margin: 2px auto 0; border-left: 1px solid #d4d5d5; overflow: hidden;}
+.bbsgame-list .item .h { display: block; width: 55px; height: 0px; margin: 0 auto;  border-top: 1px solid #d4d5d5; overflow: hidden;}
+.bbsgame-list .item span { display: block; height: 38px; line-height: 38px; font-size: 16px; color: #666; text-align: center; position: relative;}
+.bbsgame-list .item .s1 { width: 10px; height: 36px; border: 1px solid #d4d5d5; border-right: 0 none; position: absolute; top: 0px; left: 0px;}
+.bbsgame-list .item .s2 { width: 10px; height: 36px; border: 1px solid #d4d5d5; border-left: 0 none; position: absolute; top: 0px; right: 0px;}
+.bbsgame-list .item .img, .bbsgame-list .item i { transition: border 0.4s ease-in;}
+.bbsgame-list .item span { transition: color 0.4s ease-in;}
+.bbsgame-list .item:hover .img, .bbsgame-list .item:hover i { border-color: #58c7b1;}
+.bbsgame-list .item:hover span { color: #58c7b1;}

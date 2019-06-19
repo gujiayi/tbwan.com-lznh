@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>龙之怒吼官网</title>
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/m_resetCss.css">
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/swiper.min.css">
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/m_common.css">
+  <link rel="stylesheet" href="/style/2018/lianyun/lznh/m_index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <ul>
+        <li><a  href="#">
+            <p class="title">官网首页</p>
+            <p class="sub">HOME</p>
+          </a></li>
+        <li><a href="#page2">
+            <p class="title">游戏资讯</p>
+            <p class="sub">NEWS</p>
+          </a></li>
+        <li><a href="#page3">
+            <p class="title">职业介绍</p>
+            <p class="sub">VOCATION</p>
+          </a></li>
+      </ul>
+      <div class="gift_wrap">
+        <div class="gift">
+          <div class="img"></div>
+          <p>领取礼包</p>
+        </div>
+		{{data name="lz天使盟约下载二维码"}}
+      {{foreach from=$DATA['lz天使盟约下载二维码'].list item=item}}
+		{{if $item.title == $deviceType}}
+			<a class="button" href="{{$item['url']}}"></a>
+		{{/if}}
+      {{/foreach}}
+      </div>
+    </div>
+    {{include file="lznh/common/m_header.html"}}
+    <div class="page1">
+      {{foreach from=$DATA['lz天使盟约下载二维码'].list item=item}}
+      {{if $item.title == $deviceType}}
+      <a href="{{$item['url']}}" class="button" id="page2">
+      </a>
+      {{/if}}
+      {{/foreach}}
+    </div>
+    <div class="page2" id='page2'>
+      <div class="num"></div>
+      <div class="tab_wrap">
+        {{data name="文章列表1333"}}
+        <ul class="tab clearfix">
+          <!-- <li class="tab-item active"><span>最新</span></li>
+          <li class="tab-item">新闻</li>
+          <li class="tab-item">公告</li>
+          <li class="tab-item">玩家攻略</li> -->
+        </ul>
+        <div class="tab_list">
+          <!-- <div class="main selected">
+            <a href="/lznh/list/newest" class="more">+</a>
+            <ul>
+              {{foreach from=$DATA["文章列表1333"].list item=item}}
+              {{if $item.typename == '最新'}}
+              <li><a href="/lznh/detail/?id={{$item.id}}"><span class="news_list">{{$item.title}}</span><span
+                    class="times">{{$item.pubdate|date_format:'%Y-%m-%d'}}</span></a></li>
+              {{/if}}
+              {{/foreach}}
+            </ul>
+          </div>
+          <div class="main">
+            <a href="/lznh/list/news" class="more">+</a>
+            <ul>
+              {{foreach from=$DATA["文章列表1333"].list item=item}}
+              {{if $item.typename == '新闻'}}
+              <li><a href="/lznh/detail/?id={{$item.id}}"><span class="news_list">{{$item.title}}</span><span
+                    class="times">{{$item.pubdate|date_format:'%Y-%m-%d'}}</span></a></li>
+              {{/if}}
+              {{/foreach}}
+            </ul>
+
+          </div>
+          <div class="main">
+            <a href="/lznh/list/notice" class="more">+</a>
+            <ul>
+              {{foreach from=$DATA["文章列表1333"].list item=item}}
+              {{if $item.typename == '公告'}}
+              <li><a href="/lznh/detail/?id={{$item.id}}"><span class="news_list">{{$item.title}}</span><span
+                    class="times">{{$item.pubdate|date_format:'%Y-%m-%d'}}</span></a></li>
+              {{/if}}
+              {{/foreach}}
+            </ul>
+
+          </div>
+          <div class="main">
+            <a href="/lznh/list/strategy" class="more">+</a>
+            <ul>
+              {{foreach from=$DATA["文章列表1333"].list item=item}}
+              {{if $item.typename == '玩家攻略'}}
+              <li><a href="/lznh/detail/?id={{$item.id}}"><span class="news_list">{{$item.title}}</span><span
+                    class="times">{{$item.pubdate|date_format:'%Y-%m-%d'}}</span></a></li>
+              {{/if}}
+              {{/foreach}}
+            </ul>
+
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="page3" >
+      <div class="num" id="page3"></div>
+      <div class="title">
+        <div class="img"></div>
+      </div>
+      <div class="tab_wrap">
+        <ul class="tab clearfix">
+          <li class="tab-item1">
+            <div class="active"><i></i>
+              <p>狂战士</p>
+            </div>
+          </li>
+          <li class="tab-item2">
+            <div><i></i>
+              <p>魔法师</p>
+            </div>
+          </li>
+          <li class="tab-item3">
+            <div><i></i>
+              <p>弓箭手</p>
+            </div>
+          </li>
+          <li class="tab-item4">
+            <div><i></i>
+              <p>冰霜龙神</p>
+            </div>
+          </li>
+          <li class="tab-item5">
+            <div><i></i>
+              <p>生命龙神</p>
+            </div>
+          </li>
+          <li class="tab-item6">
+            <div><i></i>
+              <p>火焰龙神</p>
+            </div>
+          </li>
+          <li class="tab-item7">
+            <div><i></i>
+              <p>暗黑龙神</p>
+            </div>
+          </li>
+        </ul>
+        <div class="tab_list">
+          <div class="main selected">
+            <img src="/images/2018/lianyun/lznh/m_index/list1.png" width="100%">
+          </div>
+          <div class="main">
+            <img src="/images/2018/lianyun/lznh/m_index/list2.png" width="100%">
+          </div>
+          <div class="main">
+            <img src="/images/2018/lianyun/lznh/m_index/list3.png" width="100%">
+          </div>
+          <div class="main">
+            <img src="/images/2018/lianyun/lznh/m_index/list4.png" width="100%">
+          </div>
+          <div class="main selected">
+            <img src="/images/2018/lianyun/lznh/m_index/list5.png" width="100%">
+          </div>
+          <div class="main">
+            <img src="/images/2018/lianyun/lznh/m_index/list6.png" width="100%">
+          </div>
+          <div class="main">
+            <img src="/images/2018/lianyun/lznh/m_index/list7.png" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page4">
+      <div class="num"></div>
+      <div class="title"></div>
+      <div class="swiper">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            {{data name="lz天使盟约专题轮播"}}
+            {{foreach from=$DATA['lz天使盟约专题轮播'].list key=k item=item}}
+            <div class="swiper-slide"><i></i><img src="{{$item.thumb}}"></div>
+            {{/foreach}}
+          </div>
+        </div>
+      </div>
+      {{data name="专题联系方式"}}
+      {{$DATA['专题联系方式']}}
+    </div>
+
+    <div class="gy-footer">
+      {{data name="移动专题底部信息"}}
+      {{$DATA['移动专题底部信息']}}
+    </div>
+    <!-- 遮罩 -->
+    <div class="login-layer"> </div>
+    <!-- 登录 -->
+    <div id="login" class="mod-login">
+      <ul class="login">
+        <li><a href="#" class="close"></a>绑定手机领取礼包</li>
+      </ul>
+      <div class="login-con">
+        <div class="login-account">
+          <form method="post" class="login-form" id="login_form">
+            <p class="item">
+              <input name="phoneNum" id="phoneNum" type="text" placeholder="请输入绑定的电话号码">
+              <i for="phoneNum" class="icon-phone"></i>
+            </p>
+            <p class="item">
+              <input name="code" id="code" type="text" placeholder="图形验证码">
+              <img onClick="this.src= '{{$CONFIG.app_url}}/csi/ImageVerify/getImageCode?'+Math.random();"
+                src="{{$CONFIG.app_url}}/csi/ImageVerify/getImageCode?{{$smarty.now}}" title="点击更换" id="php-code"
+                class="php-code" />
+            </p>
+            <p class="item">
+              <input name="captcha" id="captcha" type="text" placeholder="短信验证码">
+              <a href="#" class="icon-code" onClick="sendCaptcha()">获取验证码</a>
+            </p>
+            <p class="error_text" id='error_text'></p>
+            <p class="tip_text">该号码用于领取</p>
+            <a href="javascript:;" class="btn-tologin" onClick="submit()">立即绑定</a>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 礼包弹框 -->
+    <div class="gift_dialog" id="gift">
+      <div class="gift">
+        <div class="title">
+          <h2></h2>
+        </div>
+        <p>礼包码：<span></span></p>
+      </div>
+      <div class="close"></div>
+    </div>
+
+  </div>
+</body>
+<script src="/js/jquery.js"></script>
+<script src="/js/2018/lianyun/lznh/swiper.min.js"></script>
+<script src="/js/2018/lianyun/lznh/m_common.js"></script>
+<script>
+  localStorage.setItem('link', window.location.href)
+  var swiper = new Swiper(".swiper-container", {
+    direction: "horizontal",
+    // loop: false,
+    effect: "coverflow",
+    initialSlide: 2,
+    slidesPerView: 1,
+    coverflow: {
+      rotate: 0,
+      stretch: 0,
+      depth: 160,
+      modifier: 2,
+      slideShadows: false
+    },
+    autoplayDisableOnInteraction: !1,
+    autoplay: 5e3,
+    pagination: ".swiper-pagination",
+    paginationType: "custom",
+
+  });
+</script>
+
+</html>

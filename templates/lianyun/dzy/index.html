@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<meta charset="UTF-8">
+				<meta name="frontend" content="cheny">
+				<title>龙皇传说单职业官网</title>
+				<meta name="keywords" content="">
+				<meta name="description" content="">
+				<link rel="stylesheet" href="{{$CONFIG.resource}}/style/2018/lianyun/lhcs/style.css?{{$CONFIG.build}}">
+				<link rel="stylesheet" href="{{$CONFIG.resource}}/style/2018/lianyun/lhcs/login.css?{{$CONFIG.build}}">		
+				<link rel="stylesheet" href="{{$CONFIG.resource}}/style/2018/lianyun/lhcs/common_top.css?{{$CONFIG.build}}">		
+				<script type="text/javascript" src="{{$CONFIG.resource}}/js/ajax.js?{{$CONFIG.build}}"></script>
+  <body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="header_wrap">
+					<div class="top_btn">
+						<a href="#"  class="game_index"><i class="icon_index"></i><span>游戏官网</span></a>
+						<a href="#footer" class="game_kefu"><i class="icon_kefu"></i><span>客服中心</span></a>
+					</div>
+					<p style="margin-left:10px;font-size:32px;">IOS安装包暂无法下载，如有疑问请联系客服
+						</p>
+					<div class="img_bg">
+							<div class="code_wrap">
+								<div class="code">
+								  {{data name="迷失传说单职业下载二维码"}}
+									{{foreach from=$DATA['迷失传说单职业下载二维码'].list item=item}}
+										<div id="{{$item['title']}}" {{if $item.title == 'ios'}}style="display:none"{{/if}}>
+											<img  src="{{$item['thumb']}}">
+											<div class="text "></div>
+										</div>
+									{{/foreach}}
+								</div>
+								<ul  class="code_tab">
+										<li ><span  class="current"></span></li>
+										<li ><span class="" ></span></li>
+								</ul>
+							</div>
+					  {{data name="迷失传说单职业"}}
+						<div class="button">
+							{{foreach from=$DATA['迷失传说单职业下载二维码'].list item=item}}
+								<a href="{{$item['url']}}" class="{{$item['title']}}"></a>
+							{{/foreach}}
+						</div>
+						<div class="gift" data-gname="{{$DATA['迷失传说单职业']['list'][0]['CONFIG']['alias_name']}}" data-gid="{{$DATA['迷失传说单职业']['list'][0]['ID']}}"></div>
+					</div>
+				</div>
+			</div>
+				<!-- 登录注册- -->
+					{{include file="login.html"}}
+			<!-- 登录注册-end -->
+			<!-- 礼包弹框 -->
+				<div class="gift_wrap" id="gift">
+					<div  class="gift">
+						<div class="title">
+							<h2></h2>
+						</div>
+						<p></p>
+					</div>
+					<div class="close"></div>
+				</div>
+				<!-- 礼包弹框 red-->
+			<div class="center">
+					<div class="slice_wrap">
+						<div class="list_wrap">
+							<ul class="tab clearfix">
+							</ul>
+							<div class="tab_list"></div>
+						
+							<div class="code">
+								{{data name="专题官网底部二维码显示"}}
+								<img src="{{$DATA['专题官网底部二维码显示']['list'][0]['thumb']}}">
+								<p>扫码立即关注</p>
+							</div>
+						</div>
+					</div>
+				<div class="tab_wrap">
+						<div class="tab">
+								<ul id="title" class="title">
+										<li  class="current1"></li>
+										<li class="" ></li>
+								</ul>
+								<div id="wrap_img" class="wrap_img">
+										<div class="gril" > <img src="/images/2018/lianyun/lhcs/gril.png"></div>
+										<div class="boy"  > <img  src="/images/2018/lianyun/lhcs/boy.png"></div>
+								</div>
+						</div>
+				</div>
+			</div>
+			<div id="guide">
+					<div class="guide">
+							<div class="icon"></div>
+							<p class="text">我知道了</p>
+					</div>
+					<div class="layer"></div>
+				</div>
+			{{include file="footer.html"}}
+	</body>
+	<script src="/js/jquery.js"></script>
+	<script type="text/javascript" src="{{$CONFIG.resource}}/js/back_cookie.js?{{$CONFIG.build}}"></script>
+	<script type="text/javascript" src="{{$CONFIG.resource}}/js/2018/lianyun/lhcs/common.js?{{$CONFIG.build}}"></script>
+	<script  type="text/javascript">
+		var link='dzy', typeid=46
+
+		</script>
+
+</html>
+

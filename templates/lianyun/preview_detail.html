@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <title>预览文章</title>
+  <style>
+  .details{
+  width:100%;
+  background: #fff;
+  color:#565656
+}
+.details h3{
+  padding-top:30px;
+  text-align: center;
+  font-size: 30px;
+  color:#e60000;
+  font-weight: bold;
+}
+.details .sub{
+  width:750px;
+  margin: 0 auto;
+  border-bottom:1px solid #e5e5e5
+}
+
+.details .sub p{
+  text-align: center;
+  line-height:40px;
+  font-size: 12px;
+  color: #565656;
+}
+.details .text_wrap{
+  min-height:720px; 
+  padding:20px 50px;
+}
+
+.details .text_wrap p{
+  line-height:34px;
+  color: #565656;
+}
+.text_wrap div {
+  line-height: 36px;
+}
+
+.article{
+  margin: 0 auto;
+  padding:0 50px;
+  border-top:1px solid #e5e5e5;
+  background:#fff;
+  height:75px;
+}
+.article a{
+  float: left;
+  line-height: 75px;
+  color: #565656;
+  width:340px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.article a:hover{
+  color: #da90f5;
+}
+.article a:nth-child(2){
+  float: right;
+  text-align: right;
+}
+.contact{
+  margin-top:100px;
+  background:#282840;
+}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="list_wrap">
+        <div class="left">
+        
+        </div>
+        <div class="right">
+          <div class="nav_wrap">
+            <div class="nav_title">文章</div>
+          </div>
+          <div class="details">
+            <h3>{{$data.title}}</h3>
+            <div class="sub">
+              <p><span class="resource">来源：{{$data.source}} </span>
+                <span class="times">时长：{{$row.pubdate|date_format:'%Y/%m/%d'}}</span>
+              </p>
+            </div>
+            <div class="text_wrap">
+              {{$body}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+
+   
+  </div>
+
+</body>
+</html>

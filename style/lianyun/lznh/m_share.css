@@ -1,0 +1,328 @@
+
+
+.sharemask ,.share-m,.share-wx{
+  display: none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  background:rgba(0,0,0,.7);
+  z-index: 52;
+}
+/* .share-wx{
+  display: block;
+} */
+.share-wx p{
+  margin:.1rem .1rem 0 0;
+  text-align: right;
+  font-size: .6rem;
+}
+.share-wx .icon{
+  width:100%;
+  height:4.55rem;
+}
+.share-wx i{
+  width:2.63rem;
+  height:4.55rem;
+  display: block;
+  float:right;
+  background:url(/images/2018/lianyun/lznh/list/guide.png) no-repeat;
+  background-size: contain;
+}
+.sharemask .attention {
+  position: fixed;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: transparent;
+  padding: 0 .5rem;
+  height: 1rem;
+  display: flex;
+}
+
+.sharemask .attention i {
+  position: absolute;
+  top: -.5rem;
+  margin-left: 20%;
+  display: block;
+  float: left;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  margin-right: .2rem;
+  background:url(/images/2018/lianyun/lznh/list/weixin.png) no-repeat;
+  background-size: contain;
+}
+.sharemask .attention .sh_i {
+  display: block;
+  width: 2.58rem;
+  height: 2.58rem;
+  position: absolute;
+  top: .7rem;
+  margin-left: 20%;
+}
+.sharemask .attention em {
+  position: absolute;
+  top: -.3rem;
+  margin-left: 33%;
+}
+
+.sharemask .attention em {
+  display: block;
+  float: left;
+  font-size: .28rem;
+  padding-top: .15rem;
+  margin-right: .2rem;
+  color: #fff;
+  font-style: normal;
+}
+.share_ctrl .share_buttons {
+  padding-bottom: 10%;
+  box-sizing: border-box;
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+}
+
+.share_buttons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  box-align: end;
+}
+.share_buttons a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -moz-box-flext: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  font-size: 1em;
+}
+.share_buttons a i {
+  display: block;
+  width: 1rem;
+  height:1rem;
+  border-radius:50%;
+  text-align: center;
+  color: #fff;
+  font-style:normal;
+}
+.share_buttons a em {
+  display: block;
+  font-size: .32em;
+  font-style: normal;
+  color: #fff;
+  line-height: 2.4em;
+}
+.share_ctrl .share_qrcode {
+  /* display:none; */
+  padding-bottom: 10%;
+  box-sizing: border-box;
+  -webkit-transform: translate(100%,0);
+  -moz-transform: translate(100%,0);
+  -ms-transform: translate(100%,0);
+  -o-transform: translate(100%,0);
+  transform: translate(100%,0);
+}
+.share_ctrl.show_qrcode .share_qrcode {
+  /* display:block; */
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+}
+.share_ctrl.show_link .share_link {
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+}
+.share_qrcode, .share_link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  box-align: end;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.share_qrcode div {
+  padding: .4em 0;
+  width: 4.2em;
+  background: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+}
+.share_qrcode div, .share_link div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  border-radius: .2em;
+  position: relative;
+}
+.btn-close {
+  font-size: 1em;
+  position: absolute;
+}
+.share_qrcode div .btn-close {
+  right: -.5em;
+  top: -.8em;
+}
+
+
+.btn-close i {
+  display: block;
+  font-size: .6rem;
+  font-weight: 400;
+  width: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  color: #fff;
+  border-radius: 1.5em;
+  box-sizing: border-box;
+  font-style:normal;
+  transform: rotate(45deg)
+}
+.share_qrcode div p {
+  color: #333;
+  padding: .2em 0;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+.share_qrcode p, .share_link p {
+  font-size: .32em;
+}
+.share_qrcode div span {
+  font-size: 1em;
+  width: 3.2em;
+  height: 3.2em;
+}
+#code canvas{
+  margin-top:.1rem;
+  width:3.1rem;
+  height:3.1rem;
+}
+.share_qrcode div span, .share_link div span {
+  display: block;
+}
+.share_ctrl.show_link .share_link {
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+}
+
+.share_ctrl .share_link {
+  padding-bottom: 14%;
+  box-sizing: border-box;
+  -webkit-transform: translate(100%,0);
+  -moz-transform: translate(100%,0);
+  -ms-transform: translate(100%,0);
+  -o-transform: translate(100%,0);
+  transform: translate(100%,0);
+}
+.share_link div {
+  min-height: 1em;
+  width: 80%;
+}
+.share_link div .btn-close {
+  right: -.5rem;
+  top: -.2rem;
+  background: transparent;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.share_link div p {
+  padding: 1em 0;
+  color: #fff;
+  text-align: left;
+  line-height: 1.5em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.share_link div span {
+  background: #fff;
+  color: #333;
+  font-size: .28em;
+  padding: 0 .5em;
+  line-height: 2em;
+  word-break: break-all;
+}
+
+.share-btn_cp i{
+  background: url(/images/2018/lianyun/lznh/list/cope.png) no-repeat center center;
+  background-size:contain;
+}
+.share-btn_wx i{
+  background: url(/images/2018/lianyun/lznh/list/weixin.png) no-repeat center center;
+  background-size:contain;
+}
+
+.share-btn_qq i{
+  background: url(/images/2018/lianyun/lznh/list/qzone.png) no-repeat center center;
+  background-size:contain;
+}
+.share-btn_qqfan i{
+  background: url(/images/2018/lianyun/lznh/list/qqim.png) no-repeat center center;
+  background-size:contain;
+}

@@ -1,0 +1,78 @@
+<div class="game-top-wrap" id="game-top-wrap">
+					<div class="game-top-main">
+						<a href="http://www.qiyouworld.com/" class="game-top-logo" title="9377网页游戏平台" target="_blank">9377网页游戏平台</a>
+						<i class="game-top-gap"></i>
+						<div class="game-top-rem fl" id="game-top-rem">
+							{{data name="420*51新通用底部_ad小图"}}{{data name="1100*249新通用底部_ad大图"}}
+							{{$DATA["420*51新通用底部_ad小图"]}} 
+						</div>
+						<div class="game-top-rem-pop" id="game-top-rem-pop">
+							{{$DATA["1100*249新通用底部_ad大图"]}} 
+						</div>
+						<div class="game-top-qr fl" id="game-top-qr">
+							{{data name="新通用头部_二维码链接"}}
+							{{$DATA["新通用头部_二维码链接"]}}
+						</div>
+						<div class="game-top-qr-pop" id="game-top-qr-pop">
+							{{data name="102*96新通用头部_二维码大图"}}
+							{{$DATA["102*96新通用头部_二维码大图"]}}
+							<p>扫码领取游戏礼包</p>
+						</div>
+						<!--<div class="game-top-topay"> <a href="http://wvw.qiyouworld.com/pay_index.php?gid=1743" target="_blank" rel="nofollow">充值</a>|</div>-->
+						<div class="game-top-hgame" id="game-top-hgame"> <a href="http://wvw.9377.com/game_center.php">热门游戏<i class="icon-arrow"></i></a> </div>
+						<div class="game-top-search">
+							<form method="post" action="http://wvw.qiyouworld.com/search.php" target="_blank">
+												<input class="game-top-stxt" type="text" name="q" placeholder="找游戏" id="game-top-stxt">
+												<input class="game-top-sbtn" type="submit" value="" id="game-top-sbtn">
+										</form>
+						</div>
+						<div class="game-top-state">
+							<a href="/lianyun/Login/index" class="game-top-log game-top-relog icon-log" rel="nofollow" style="display: block;">登录</a>
+							<a href="javascript:;" class="game-top-log game-top-loged" style="display: none;">
+								<span class="game-top-uname" id="game-top-uname"></span>
+								<i class="icon-redot"></i>
+								<i class="icon-arrow"></i>
+							</a>
+						</div>
+						<div class="game-top-setup">
+							<ul>
+								<li><a href="/lianyun/Login/logout">安全登出</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- 游戏列表弹出 -->
+					<div class="game-top-glist" id="game-top-glist">
+						<i class="game-top-bg"></i>
+						<div class="game-top-gmain">
+							<div class="game-top-rmd">
+								<!-- 图片用png8 -->
+								{{data name="新头部的全部游戏"}}
+								{{foreach from=$DATA['新头部的全部游戏'].list|games_by_system item="v"}}
+								<a href="{{$v.CONFIG.site}}" target="_blank" title="{{$v.NAME}}">
+								{{data name="新通用头部推荐游戏_{{$v.ALIAS}}"}}
+								{{if !empty($DATA["新通用头部推荐游戏_{{$v.ALIAS}}"])}}
+								{{$DATA["新通用头部推荐游戏_{{$v.ALIAS}}"]}}
+								{{else}}
+								<img src="{{$CONFIG.resource}}/images/2014/game/icon-big/{{$v.ALIAS}}.png?{{$CONFIG.build}}" alt="{{$v.NAME}}" width="82" height="82" />
+								{{/if}}
+								<em>{{$v.NAME}}</em></a>
+								{{/foreach}}
+							</div>
+							<div class="game-top-aglist">
+								<dl class="game-top-gtype1">
+									{{data name="新通用头部_角色扮演推荐"}}
+									{{foreach from=$DATA["新通用头部_角色扮演推荐"].list item="v"}}
+									<dd><a href="{{$v.CONFIG.site}}" title="{{$v.CONFIG.alias_name}}" target="_blank">{{$v.CONFIG.alias_name}} {{if $v['CONFIG']['step'] == 'hot'}}<i class="icon-hot"></i>{{elseif $v['CONFIG']['step'] == 'new'}}<i class="icon-new"></i>{{/if}}</a></dd>
+									{{/foreach}}
+								</dl>
+								<dl class="game-top-gtype2">
+									<dt>其他类型</dt>
+									{{data name="新通用头部_其他类型推荐"}}
+									{{foreach from=$DATA["新通用头部_其他类型推荐"].list item="v"}}
+									<dd><a href="{{$v.CONFIG.site}}" title="{{$v.CONFIG.alias_name}}" target="_blank">{{$v.CONFIG.alias_name}} {{if $v['CONFIG']['step'] == 'hot'}}<i class="icon-hot"></i>{{elseif $v['CONFIG']['step'] == 'new'}}<i class="icon-new"></i>{{/if}}</a></dd>
+									{{/foreach}}
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>

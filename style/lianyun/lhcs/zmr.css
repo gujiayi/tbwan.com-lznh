@@ -1,0 +1,61 @@
+
+.header{
+  height:1077px;
+  background:url(/images/2018/lianyun/lhcs/header1.jpg) no-repeat center center;
+  background-size:cover;
+}
+.header  .game_index{
+  background:url(/images/2018/lianyun/lhcs/game_bg1.png) no-repeat;
+  background-size:contain;
+}
+.header .game_kefu{
+  background:url(/images/2018/lianyun/lhcs/kefu_bg1.png) no-repeat;
+  background-size:contain;
+}
+
+.header  .top_btn span{
+  display: inline-block;
+  padding-top:1px;
+  letter-spacing:3px;
+}
+.header .img_bg{
+  background:url(/images/2018/lianyun/lhcs/get.png) no-repeat;
+  background-size:contain;
+}
+.center{
+  margin-top:0px;
+  height:2108px;
+  background:url(/images/2018/lianyun/lhcs/center1.jpg) no-repeat center center;
+  background-size:cover;
+}
+@media screen and (max-width:1024px){
+  .header{
+    background:url(/images/2018/lianyun/lhcs/header1.jpg) no-repeat 45% center;
+  }
+  .logo{
+    left:10px;
+  }
+ 
+}
+.slice_wrap {
+  height: 610px;
+}
+.slice_wrap .list_wrap{
+  right:50% !important;
+  margin-left:-342px ;
+  top:150px !important;
+  background: url(/images/2018/lianyun/lhcs/list1.png) no-repeat !important;
+}
+
+.slice_wrap  a:hover span,.slice_wrap  .more a:hover{
+  color:#bb4646 !important;
+}
+.tab_wrap{
+  margin-top:265px !important;
+}
+@media (max-width:1000px){
+  .slice_wrap .list_wrap{
+    margin-left:-425px !important;
+  }
+ 
+}

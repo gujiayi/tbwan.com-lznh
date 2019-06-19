@@ -1,0 +1,22 @@
+<div class="footer" id="footer">
+		<div class="footer_wrap">
+		{{data name="专题官网底部二维码显示"}}
+
+		{{foreach from=$DATA["专题官网底部二维码显示"].list  item="item"}}
+				<div class="left">
+					<div class="img">
+							<img src="{{$item['thumb']}}">
+					</div>
+					<div class="text">
+						<p class="title">龙皇传说<span class="sub"></span></p>
+						<p class="scan_code">扫描二维码立即关注</p>
+					</div>
+				</div>
+			{{/foreach}}
+				<div class="right">
+					<p class="title">客服联系方式：</p>
+					<p><span>客服 QQ : 800848219 </span><a href="http://q.url.cn/CDK30l?_type=wpa&qidian=true" class="call">立即咨询</a></p>
+					<p><span>客服热线 : 020-37260535</span><i> 服务时间：09：00 - 21：00</i></p>
+				</div>
+		</div>
+	</div>

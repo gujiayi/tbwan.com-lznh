@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color:#f0f0f0; min-width: 1000px;}
+.top_menu{background-color:#fff;}
+.user_main{ background:#f3f3f3; padding:20px 0 60px;}
+.user_section{width:1000px; background:#fff;}
+.user_section02{width:998px; border:1px solid #e2e2e2; background:#fff; margin-top:20px;}
+.col1{ float:left; width:224px; margin-right:8px;}
+.col2{ float:left; width:364px;}
+.col3{ float:left; width:360px;}
+.zone{ width:720px;}
+.zone2{ width:960px;}
+
+.f14{font-size:14px;}
+
+.org_color{color:#03b4f5;}
+.cont_form{padding-top:20px;}
+
+.quit{ margin:0px 5px; color:#fc0505;}
+
+.user_icos{background:url(/images/cms_style_2015/user/user_icos.gif?201606201054) no-repeat; display:inline-block; width:74px; height:74px;}
+.u_password{background-position:0 0;}
+.u_mibao{background-position:0 -75px;}
+.u_email{background-position:0 -150px;}
+.u_phone{background-position:0 -225px;}
+.u_paperwork{background-position:0 -300px;}
+
+.account_list{padding-top:14px;}
+.account_list p strong{font-size:14px;}
+.account_list td{border-bottom:1px solid #f0f0f0; line-height:20px;}
+.account_list td a{display:inline-block; width:78px; height:32px; line-height:32px; border-radius:3px; text-align:center; background:#c0bfbe; color:#fff;}
+.account_list td a:hover{text-decoration:none; background:#03b4f5; color:#fff;}
+/*修改密码*/
+.mima .tit .w .c{ background:url(img/mima-h4.gif?201606201054) 8px center no-repeat; height:100%;}
+.mima .cont li{ height:40px; line-height:40px; font-size:12px; font-weight:bold; background:#DEEFFF; padding-left:20px; border-top:1px solid #B6D0E9;}
+.mima .cont li.cur{ background:#146FBC;}
+.mima .cont li.cur a{ color:#fff;}
+
+.code_process{padding:20px 0 50px 0; margin:0 auto; width:474px;}
+/*操作提示*/
+.czts{ width:100%;}
+.czts .cont{ padding:40px;}
+.czts .cont .msg{ background:url(img/success.jpg?201606201054) left no-repeat; padding:20px 20px 20px 80px; color:#52A000; font-size:14px; font-weight:bold;}
+.czts .cont .button{ margin:20px 0 0 80px;}
+.set_code{width:305px; margin:0 auto;}
+.set_code li{margin-bottom:16px; height:32px; font-size:14px; line-height:32px;}
+.code_txt label{padding-right:10px;}
+.code_txt input{width:185px; height:30px; line-height:30px; background-color:#eaf9ff; border:1px solid #d1dddf; padding:0 10px;}
+.code_sub{padding-left:81px;}
+.code_sub input{ border-radius:3px; border:none; background-color:#ff6a00; color:#fff; font-size:14px; width:100px; height:32px; cursor:pointer;}
+.code_modify{text-align:center;}
+
+/**/
+.user_left_menu_title a{color:#333333; text-decoration:none;font-size:15px;font-family:"microsoft yahei"; font-weight:bold;}
+.m_t{ font-size:14px; color:#000;  padding-left:17px !important;border-top:none;}
+.user_left_menu_title a:hover{ text-decoration:none;}
+.user_left .service{ overflow:hidden;}
+.user_left .service_li li{ height:auto !important; position:relative; z-index:999;}
+.user_left .index_service_peo{ top:30px !important; right:-15px !important;}
+.user_left .service_li{ padding-left:0px !important;}
+.user_title_ico{ background:url(img/icon.gif?201606201054) no-repeat -2px -5px; display:inline-block; width:32px; height:32px; vertical-align:middle; margin-right:5px;}
+.s_title_ico{ background:url(img/icon.gif?201606201054) no-repeat -105px -3px; display:inline-block; width:20px; height:30px; vertical-align:middle; margin-right:5px;}
+.m_title_ico{ background:url(img/icon.gif?201606201054) no-repeat -36px 0px; display:inline-block; width:28px; height:32px; vertical-align:middle; margin-right:9px;}
+.i_title_ico{background:url(img/icon.gif?201606201054) no-repeat -73px 0px; display:inline-block; width:22px; height:32px; vertical-align:middle; margin-right:9px;}
+/*用户中心侧边菜单*/
+.p_input,.sel_ques{border:1px solid #d7d7d7; width:235px; height:30px; line-height:30px; text-indent:4px; vertical-align:middle; color:#666;}
+.p_submit_btn,.p_submit_blue_btn{width:139px; height:42px; display:inline-block; border-radius:2px; color:#fff; font-weight:bold; font-size:15px; border:none; cursor:pointer; text-align:center; line-height:42px;}
+.p_submit_btn:hover{color:#fff; background:#00bbff;}
+
+.p_submit_btn{background:#03b4f5;}
+.p_submit_blue_btn{background:#3ea6cd;}
+.p_submit_blue_btn:hover{color:#fff;}
+
+.ml50{margin-left:50px;}
+.strength span{display:inline-block; width:78px; height:12px; background:#ccc; margin-left:1px; margin-right:-3px; *margin-right:0px; vertical-align:middle;}
+.strength span.focus{background:#3ce7ff;}
+
+/******输入框样式*****/
+.played{ display:inline-block; *display:inline; *zoom:1; *margin-top:10px;width:61px; line-height:19px;*line-height:20px; text-align:center; background:url(img/icon.gif?201606201054) left -500px no-repeat; }
+.played a{color:#fff !important;}
+
+/* 修改二次密码和设置二级密码的弹窗 */
+.pop_box{border-bottom:1px solid #edba24; border-top:1px solid #edba24; position:relative; display:none;}
+.pop_inner{border:1px solid #fbe478; background-color:#ffee8d;}
+.pop_inner h2{height:32px; line-height:32px; font-size:14px; font-weight:normal;}
+.pop_pp{background-color:#fff;}
+.modify_close{position:absolute; text-align:center; line-height:22px; top: 0; right:15px; cursor:pointer; color:#3e3e3e; width:32px; height:22px; border:1px solid #ecc81e; background-color:#fff2c8; border-bottom-left-radius:4px; border-bottom-right-radius:4px;}
+.modify_inner{padding:8px 15px; height:250px; width:442px;}
+.modify_form{height:212px;}
+.modify_form ul{padding:22px 0 0 35px;}
+.modify_form li{color:#006b8a; font-size:14px; height:32px; line-height:32px; margin-bottom:10px;}
+.modify_txt label{padding-right:14px;}
+.modify_txt input{height:30px; width:185px; padding:0 10px; line-height:30px; background-color:#e9f8ff; border:1px solid #efb7bc; border-radius:2px;}
+.modify_txt span{color:#fea14f; padding-left:10px; font-size:12px;}
+.modify_sub{padding-left:0; text-align:center; padding-top:10px;}
+.setup_inner{padding:2px 10px 10px; width:375px; height:306px;}
+.setup_form{padding-top:15px;}
+.setup_form p{width:310px; margin:0 auto; line-height:18px; margin-bottom:5px;}
+.setup_form ul{padding:10px 0 20px;}
+.setup_form li{text-align:center; font-size:14px; height:24px; line-height:24px; margin-bottom:12px;}
+.setup_form li a{display:block; width:100%; height:100%; color:#00afef;}
+.setup_form li i{display:inline-block; vertical-align:middle; width:24px; height:24px; margin-right:14px;}
+.setup_link{padding-bottom:10px; padding-left:70px;}
+.setup_link p{width:108px; height:40px; float:left; margin-right:14px;}
+.setup_link a{display:block; height:38px; text-align:center; font-size:16px; width:106px; line-height:38px;}
+.finish_btn{border:1px solid #ab1400;}
+.revert_btn{border:1px solid #ffc548;}
+.finish_btn a{border:1px solid #e05542; background-color:#d51c03; color:#fff;}
+.revert_btn a{border:1px solid #ffe08a; background-color:#ffd563; color:#3a2a00;}
+.finish_btn a:hover{background-color:#ff1e00;}
+.revert_btn a:hover{background-color:#ffba00;}
+
+.process_box{float:left; margin-right:24px; color:#000;}
+.process_box .dt{width:26px; margin-top:4px; height:26px; font-size:14px; border:4px solid #bbc0c9; background-color:#fff; text-align:center; line-height:26px; border-radius:50%; float:left;}
+.process_box .dd{width:100px; height:20px;line-height:20px; font-size:16px; text-align:center; border-bottom:4px solid #bbc0c9; float:left;}
+.active .dt,.active .dd{border-color:#ef9b1e; color:#ef9b1e;}
+
+.red{color: red;}
+/* 翻页 */
+.pages{margin-top:20px; text-align:right;}
+.pages a,.pages span{display:inline-block; border:1px solid #e2e2e2; padding:2px 8px; line-height:20px;}
+.pages span:hover { cursor: default;}
+.pages a.cur, .pages a:hover{ border-color: #03b4f5; background:#03b4f5; color:#fff; text-decoration: none;}
+
+.getpass_box{background: none repeat scroll 0 0 #fff; border: 1px solid #e2e2e2; min-height:331px; _height:331px;}
+.getpass_box table{margin: 20px 100px;}
+.getpass_box table tr{height: 40px; margin-top: 10px;}
+.user_list_tab{background: url(/images/cms_style_2015/user/title_bg.jpg?201606201054) repeat-x scroll 0 0 rgba(0, 0, 0, 0);    border-bottom: 1px solid #e2e2e2; height: 37px; line-height: 37px;}
+.user_list_tab li{border-right: 1px solid #d3d3d3; cursor: pointer;  float: left; height: 37px; line-height: 37px; text-align: center; width: 120px;}
+.user_list_tab li a{width:120px; height:37px; color:#6c6c6c; font-size:12px; display:block;}
+.user_list_tab li a:hover{text-decoration: none;}
+.user_list_tab li.current{background: none repeat scroll 0 0 #fff; border-top: 2px solid #ff6a00; height: 36px; line-height: 36px;  text-align: center; width: 120px;}
+.user_list_tab li.current a{color: #ff6a00; font-weight: bold;}
+ 
+/*找回密码*/
+.set_getpass_user{padding-left:20px;}
+/*收货地址管理*/
+.address_list { padding: 30px 0;}
+.address_list a { color: #28aedf;}
+.address_list .col_addr { position: relative; padding: 0 26px 0 10px;}
+.address_list .icon_addr_def { width: 34px; height: 34px; background-position: -66px -330px; position: absolute; top: 0px; right: 0px;}
+.addr_other { height: 42px; line-height: 42px; color: #000; margin-top: 25px;}
+.addr_other .add_address_btn { display: inline-block; width: 138px; height: 40px; line-height: 40px; color: #fff; text-align: center; border: 1px solid #6bd3f9; background: #03b4f5; border-radius: 4px; margin-right: 10px;}
+.addr_other .add_address_btn:hover { background: #0496cc; text-decoration: none;}
+ 

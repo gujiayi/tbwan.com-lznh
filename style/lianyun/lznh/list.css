@@ -1,0 +1,256 @@
+.container{
+  position: relative;
+  background:#1c1e35;
+}
+.top{
+  background: url(/images/2018/lianyun/lznh/list/top_bg.jpg) no-repeat center center;
+}
+
+.content{
+  min-height:766px;
+  margin-top:-340px;
+ 
+}
+.list_wrap{
+  width:1200px;
+  margin:0 auto;
+}
+.details_wrap{
+  width:100%;
+}
+.list_wrap .left{
+  float: left;
+  width:336px;
+  height:610px;
+  background: url(/images/2018/lianyun/lznh/list/side.png) no-repeat;
+}
+.list_wrap .left .code{
+  height:154px;
+  display: flex;
+  padding:74px 0 0 22px;
+}
+.list_wrap .code>div{
+  margin-left:24px;
+}
+.list_wrap .code p{
+  line-height: 30px;
+  text-align: center;
+}
+.list_wrap .download{
+  width:220px;
+  margin:22px 0 0 54px;
+}
+.list_wrap .android_down,.list_wrap .ios_down{
+  height:64px;
+  width:100%;
+  margin-top:15px;
+  cursor: pointer;
+}
+
+.list_wrap .text {
+  width:234px;
+  margin:34px auto 0;
+}
+.list_wrap .text p{
+  line-height: 40px;
+  text-align: center;
+  margin-top:10px;
+  border-bottom:1px solid #3c3a80;
+}
+.list_wrap .right{
+  width:864px;
+  float: left;
+}
+.list_wrap .nav_wrap{
+  width:100%;
+  height:66px;
+  margin-top:32px;
+  line-height: 66px;
+  background: url(/images/2018/lianyun/lznh/list/notice.jpg) no-repeat;
+  color:#fff4c2;
+}
+.list_wrap .nav_title{
+  float: left;
+  padding-left:26px;
+  font-size: 30px;
+}
+.list_wrap .nav{
+  float: right;
+  padding-right:26px;
+  font-size: 14px;
+}
+.list_wrap .nav a{
+  color:#fff4c2;
+}
+ .tab_wrap {
+  position: relative;
+  overflow: hidden;
+  padding:28px 0 0 60px;
+  color:#565656;
+  background: #fff;
+
+}
+.tab{
+  display:flex;
+  justify-content: space-between;
+  border-bottom:1px solid #e5e5e5
+} 
+.tab li {
+	float:left;
+  line-height:42px;
+  cursor:pointer;
+  font-size:20px;
+  
+}
+.tab li.active{
+  color:#e60000;
+  border-bottom:2px solid #e60000
+}
+.tab_list{
+  position: relative;
+  margin-top:45px;
+  background:#fff;
+
+}
+ .tab_list .main{
+  display: none;
+}
+ .tab_list .selected{
+  display: block;
+}
+ .tab_list .wrap {
+  height:626px;
+  overflow: hidden;
+}
+ .tab_list .wrap a:hover{
+  border-bottom:1px solid #e60000;
+}
+.tab_list .wrap li{
+  position: relative;
+  height:60px;
+  line-height: 60px;
+  margin-right:45px;
+  padding-left:20px;
+  border-bottom:1px dashed #e5e5e5;
+}
+ .tab_list .wrap li::before{
+  position: absolute;
+  top:28px;
+  left:9px;
+  display: block;
+  content: '';
+  width:7px;
+  height:7px;
+  background:url(/images/2018/lianyun/lznh/m_index/list_icon.png) no-repeat;
+  background-size: contain;
+}
+ .tab_list .news_list{
+  float: left;
+  width: 580px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color:#565656;
+}
+.tab_list .times{
+  display: block;
+  float: left;
+  padding-left: 40px;
+  color:#565656;
+}
+
+.details{
+  width:100%;
+  background: #fff;
+  color:#565656
+}
+.details h3{
+  padding-top:30px;
+  text-align: center;
+  font-size: 30px;
+  color:#e60000;
+  font-weight: bold;
+}
+.details .sub{
+  width:750px;
+  margin: 0 auto;
+  border-bottom:1px solid #e5e5e5
+}
+
+.details .sub p{
+  text-align: center;
+  line-height:40px;
+  font-size: 12px;
+  color: #565656;
+}
+.details .text_wrap{
+  min-height:720px; 
+  padding:20px 50px;
+}
+
+.details .text_wrap p{
+  line-height:34px;
+  color: #565656;
+}
+.text_wrap div {
+  line-height: 36px;
+}
+
+.article{
+  margin: 0 auto;
+  padding:0 50px;
+  border-top:1px solid #e5e5e5;
+  background:#fff;
+  height:75px;
+}
+.article a{
+  float: left;
+  line-height: 75px;
+  color: #565656;
+  width:340px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.article a:hover{
+  color: #da90f5;
+}
+.article a:nth-child(2){
+  float: right;
+  text-align: right;
+}
+.contact{
+  margin-top:100px;
+  background:#282840;
+}
+.gy-footer{
+  background:#282840
+}
+
+
+
+.pagination{
+  height:90px;
+  display: flex;
+  justify-content: center;
+}
+.page {
+  margin:0 auto;
+  background: #fff;
+}
+
+.pagination a{display: inline;}
+
+.pagination  a ,.pagination span{
+  float: left;
+  padding:13px 16px;
+  margin:0 5px;
+  text-align: center;
+  border-radius:20px;
+  color: #565656;
+  background:#e8e8e8;
+}
+.pagination .current{
+  color:#fff;
+  background-color: #c6a044;
+}

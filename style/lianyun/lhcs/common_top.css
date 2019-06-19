@@ -1,0 +1,118 @@
+@charset "utf-8";
+/**
+ * @Descr     :��Ϸͨ�ö����ײ�
+ * @WebSite   :http://www.9377.com/
+ * @DateTime  :2015-07-03 16:14:12
+ **/
+/*reset.css*/
+html{ font-size:100%;} body { margin:0; color: #666; font-size: 12px; line-height: 1.5; min-width: 1098px;} dl, dd, h1, h2, h3, h4, h5, h6, p, ul, ol { margin:0;} ul, ol { padding-left:0; list-style-type:none;} img { border:0;} a { text-decoration:none; outline: 0 none;} a:hover { text-decoration:none;} a, button { cursor:pointer;} table { border-collapse:collapse; border-spacing:0} input, select, img { vertical-align:middle;} input, select, body { font-family: 'microsoft yahei';} a, input, button { padding:0; margin:0; outline:0} i,em {font-style: normal;} .fl { float: left; display: inline;} .fr { float: right; display: inline;} .dib { display: inline-block; *display: inline; *zoom: 1;} .fix {zoom:1;} .fix:after,.fix:before{display:block;content:"clear";height:0;clear:both;overflow:hidden;visibility:hidden;} .none { display: none;} .hidden { width: 0px; height: 0px; overflow: hidden;}
+/*reset.css*/
+
+.game-top-hgame a, .game-top-hgame .icon-arrow,.game-top-state .icon-log,.game-top-setup .icon-email, .game-top-aglist .icon-hot, .game-top-aglist .icon-new, .game-top-qr .icon-mark, .game-top-loged .icon-arrow, .game-top-loged .icon-redot { background: url(/images/2018/lianyun/lhcs/game_top_icon.png) no-repeat; _background: url(/images/2018/lianyun/lhcs/game_top_icon.gif) no-repeat;}
+.game-top-wrap { width: 100%; height: 42px; background: #fff; position: relative; z-index: 100; font:12px/1.5 "microsoft yahei", Arial, sans-serif;}
+.game-top-main { width: 1024px; height: 42px; margin: 0 auto; background: #fff; position: relative; z-index: 101;}
+.game-top-main a { transition: all 0.4s ease;}
+.game-top-logo { width: 104px; height: 42px; text-indent: -9999px; background: url(/images/2018/lianyun/lhcs/game_top_logo.jpg) no-repeat; position: absolute; top: 0px; left: 0px; z-index: 101;}
+.game-top-gap { width: 1px; height: 20px; background: #d2d7e3; position: absolute; top: 11px; left: 149px;}
+.game-top-rem { width: 360px; height: 42px; position: absolute; top: 0px; left: 150px;}
+.game-top-rem-pop { width: 1024px; height: 192px; position: absolute; top: 0px; left: 0px; z-index: 100; display: none;}
+.game-top-qr { width: 103px; height: 42px; line-height: 42px; color: #d6d5d5; position: absolute; top: 0px; right: 386px; z-index: 101;}
+.game-top-qr a { display: inline-block; line-height: 42px; color: #565656; padding: 0 10px 0 26px; background: url(/images/2018/lianyun/lhcs/qricon.png) no-repeat 0px 11px; position: relative;}
+.game-top-qr a:hover, .game-top-qr .qr-hover { color: #03b4f5; background: url(/images/2018/lianyun/lhcs/qricon_hover.png) no-repeat 0px 11px;}
+.game-top-qr .icon-mark { width: 6px; height: 6px; overflow: hidden; vertical-align: middle; background-position: 0 -316px; position: absolute; top: 12px; right: 8px; display: none;}
+.game-top-qr-pop { width: 170px; height: 194px; overflow: hidden; position: absolute; top: 42px; left: 537px; z-index: 100; display: none;}
+.game-top-qr-pop p { height: 24px; line-height: 14px; font-size: 14px; color: #333; font-weight: 700; text-align: center; background: #fff;}
+.game-top-topay { width: 48px; height: 42px; line-height: 42px; color: #d6d5d5; position: absolute; top: 0px; right: 338px; z-index: 101;}
+.game-top-topay a { display: inline-block; line-height: 42px; color: #565656; padding: 0 10px; transition: all 0.4s ease;}
+.game-top-topay a:hover { color: #03b4f5;}
+.game-top-hgame { background: #fff; position: absolute; top: 0px; right: 243px; z-index: 101;}
+.game-top-hgame a { display: inline-block; line-height: 42px; color: #03b4f5; padding: 0 12px 0 25px; background-position: 0px 15px;}
+.game-top-hgame a:hover .icon-arrow { transform: rotate(180deg);}
+.game-top-hgame .icon-arrow { width: 8px; height: 6px; position: absolute; top: 19px; right: 0px; background-position: 0 -120px; transition: all 0.4s ease 0s;}
+.game-top-hgame-hover .icon-arrow { transform: rotate(180deg);}
+.game-top-search { width: 132px; height: 24px; position: absolute; top: 10px; right: 100px; z-index: 101; background: url(/images/2018/lianyun/lhcs/game_top_search.jpg) no-repeat;}
+.game-top-stxt { width: 98px; height: 18px; line-height: 18px; font-size: 12px; border: 0 none; overflow: hidden; margin: 3px 0 0 8px; float: left;}
+.game-top-sbtn { width: 20px; height: 18px; float: left; margin: 3px 0 0 0px; cursor: pointer; display: inline; background: none; border: none;}
+.game-top-state { width: 84px; height: 42px; color: #fff; overflow: hidden; background-color: #03b4f5; position: absolute; top: 0px; right: 0px; z-index: 101;}
+.game-top-state a:hover { color: #fff; background-color: #00baff;}
+.game-top-log { display: block; width: 100%; height: 42px; line-height: 42px; color: #fff; text-indent: 38px;}
+.game-top-state a.icon-log { background-position: 20px -185px;}
+.game-top-relog { }
+.game-top-loged { text-align: center; text-indent: 0px; position: relative;}
+.game-top-uname { display: block; width: 65px; height: 42px; padding: 0 14px 0 5px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; text-align: center;}
+.game-top-loged .icon-arrow { width: 8px; height: 6px; position: absolute; top: 19px; right: 6px; background-position: 0 -346px; transition: all 0.4s ease 0s;}
+.game-top-loged .icon-redot { width: 6px; height: 6px; overflow: hidden; background-position: 0 -316px; position: absolute; top: 6px; right: 7px; display: none;}
+.game-top-loged-hover .icon-arrow { transform: rotate(180deg);}
+.game-top-setup { width: 102px; height: 32px; padding-left: 15px; background: #03b4f5; position: absolute; top: 42px; right: -33px; display: none;}
+.game-top-setup ul li a { display: block; height: 28px; line-height: 28px; color: #fff; overflow: hidden; position: relative;}
+.game-top-setup ul li a:hover { color: #b0e9fe;}
+.game-top-setup .icon-email { display: inline-block; width: 21px; height: 14px; background-position: 0 -38px; position: absolute; top: 6px; left: 61px;}
+.game-top-setup .icon-emails { background-position: 0 -80px;}
+
+.game-top-glist { width: 100%; height: 340px; overflow: hidden; opacity: 0; position: absolute; top: -340px; left: 0px; z-index: 100;}
+.game-top-bg { width: 100%; height: 340px; position: absolute; top: 0px; left: 0px; background: #fff; opacity: 0.9;}
+.game-top-gmain { width: 1024px; height: 340px; margin: 0 auto; overflow: hidden; position: relative; z-index: 1002;}
+.game-top-rmd { width: 1200px; height: 145px; border-bottom: 1px solid #ddd;}
+.game-top-rmd a { width: 82px; height: 110px; overflow: hidden; text-align: center; color: #333; margin: 25px 75px 0 0; display: inline; float: left; }
+.game-top-rmd a em { display: block; margin-top: 10px; transition: all 0.3s ease;}
+.game-top-rmd a img { display: block;}
+.game-top-rmd a:hover { color: #09b5f5;}
+.game-top-rmd a:hover em { margin-top: 5px;}
+.game-top-aglist .icon-hot, .game-top-aglist .icon-new { display: inline-block; width: 11px; height: 11px; overflow: hidden; vertical-align: middle; background-position: 0 -240px;}
+.game-top-aglist .icon-new { background-position: 0 -280px;}
+
+.game-top-aglist { width: 1200px; height: 166px;}
+.game-top-gtype1 { width: 671px; border-right: 1px solid #ddd;}
+.game-top-gtype2 { width: 362px; padding-left: 70px;}
+.game-top-aglist dl { height: 150px; margin-top: 16px; float: left;}
+.game-top-aglist dt { height: 34px; font-size: 16px; color: #09b5f5;}
+.game-top-aglist dd { width: 134px; height: 24px; line-height: 24px; overflow: hidden; float: left;}
+.game-top-aglist dd a { color: #6f6f6f; transition: all 0.3s ease;}
+.game-top-aglist dd a:hover { color: #09b5f5; padding-left: 12px;}
+.game-top-gtype2 dd { width: 178px;}
+
+.game-top-rem img{
+  width:360px;
+  height:42px;
+}
+.game-top-qr-pop img{
+  height:160px;
+}
+/*.game-footer --Ĭ�Ϻ�ɫ */
+/*.game-footer ��С����=�������ȣ��޸��ƶ������Ķ��հ�����*/
+.game-footer { width: 100%; min-width: 1024px; overflow:hidden; background: #080808; font:12px/1.5 "microsoft yahei", Arial, sans-serif;}
+.game-footer-inner { width: 100%; height: 198px; border-top: 1px solid #27262a; border-bottom: 1px solid #27262a; background: #1d1c20; position: relative; overflow:hidden;}
+.game-footer-fun { width: 1098px; height: 198px; overflow: hidden; margin: 0 auto; position: absolute; top: 0px; left: 50%; margin-left: -530px;}
+.game-footer-fun dl { width: 133px; height: 135px; margin: 32px 0 0 -1px; padding-left: 50px; border-left: 1px solid #2a292d; float: left;}
+.game-footer-fun dt { height: 18px; color: #5e5e5e; font-weight: 700; margin-bottom: 8px;}
+.game-footer-fun dd { height: 22px; line-height: 22px;}
+.game-footer-fun dd a { color: #5e5e5e; transition: all 0.4s ease;}
+.game-footer-fun dl:nth-child(5) dd:last-child a { color: #cba950; }
+.game-footer-fun dd a:hover { color: #3f6c8c;}
+.game-footer-more { width: 720px; height: 198px; overflow: hidden; position: absolute; top: 0px; left: 184px; display: none;}
+.game-footer-m { width: 732px; height: 170px; overflow: hidden; background: #1d1c20; position: absolute; top: 0px; left: 714px;}
+.game-footer-copyright { width: 1024px; min-height: 145px; margin: 0 auto; overflow: hidden;}
+.game-footer-logo { width: 140px; height: 56px; margin: 45px 0 0 70px; background: url(/images/2018/lianyun/lhcs/footer_logo_black.png) no-repeat; _background: url(/images/2018/lianyun/lhcs/footer_logo_black.gif) no-repeat; float: left;}
+.game-footer-copr { height: 77px; padding-left: 14px; margin-top: 34px; border-left: 1px solid #343237; color: #6e6e6e; float: left;}
+.game-footer-copr2 { height: 56px; margin-top: 44px;}
+.game-footer-copr a { color: #6e6e6e; transition: all 0.4s ease}
+.game-footer-copr a:hover { color: #3f6c8c;}
+.game-footer-copr p { height: 14px; line-height: 14px; overflow: hidden; margin-bottom: 7px;}
+/*�ײ���� --��ɫ*/
+.game-footer-white { background: #f0f0f0;}
+.game-footer-white .game-footer-inner { border-top: 1px solid #e2e2e2; border-bottom: 1px solid #e2e2e2; background: #fff;}
+.game-footer-white .game-footer-inner .game-footer-fun dl { border-left: 1px solid #e3e3e3;}
+.game-footer-white .game-footer-fun dt { color: #6f6f6f;}
+.game-footer-white .game-footer-fun dd a { color: #6f6f6f;}
+.game-footer-white .game-footer-fun dd a:hover { color: #03b4f5;}
+.game-footer-white .game-footer-m { background: #fff;}
+.game-footer-white .game-footer-copr  { border-left: 1px solid #d6d5d5; color: #908f92;}
+.game-footer-white .game-footer-copr a { color: #908f92;}
+.game-footer-white .game-footer-copr a:hover { color: #03b4f5;}
+
+.game-footer .bainfo { text-align: center; float: none; clear: both; padding: 10px 0;}
+.game-footer .bainfo .game-ba, .game-footer .bainfo .comp-ba { display:inline-block; vertical-align: top; padding-left: 34px; height: 35px; line-height: 35px; margin: 0 10px; color: #6e6e6e;}
+.game-footer .bainfo .game-ba { background: url('/images/youxidzbq.png?201804') center left no-repeat; }
+.game-footer .bainfo .comp-ba { background: url('/images/wenhuajingying.png?201804') center left no-repeat;}
+
+
